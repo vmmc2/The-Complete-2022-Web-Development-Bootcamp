@@ -25,3 +25,11 @@
 ```
 <!-- This is a comment, my friends! -->
 ```
+
+## 06) The < title > tag
+* This specific tag is used to display the title of our webpage inside a tab of the browser that we are using.
+* This tag must be inside the < head > < /head > tag.
+
+## 07) The < head > and the < body > tag
+* The head tag indicates to the browser how it should interpret the HTML file that it's reading.
+* The body tag is where the content of our webpage really stays.
