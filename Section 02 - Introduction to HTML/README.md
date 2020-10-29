@@ -33,3 +33,14 @@
 ## 07) The < head > and the < body > tag
 * The head tag indicates to the browser how it should interpret the HTML file that it's reading.
 * The body tag is where the content of our webpage really stays.
+
+## 08) The emphasis < em > tag vs The < i > italic tag
+* The emphasis tag is used when we want to "say" to the browser that this specific part of the text is important and, because of that, it should be displayed in italic.
+* The italic tag just tells to the browser that this specific part of the text must be displayed in italic but it does not "explain" why.
+* It is preferred to always use the emphasis tag instead of the italic tag.
+
+## 09) The < strong > strong tag vs the < b > bold tag
+* The strong tag also "says" to the browser that this specific part of the text is important and therefore should be displayed in a bold way.
+* The bold tag just "tells" the browser to display this part of the text in a bold way.
+* One should always use the strong tag instead of the bold tag.
+
