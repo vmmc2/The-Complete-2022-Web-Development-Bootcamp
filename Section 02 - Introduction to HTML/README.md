@@ -19,3 +19,9 @@
 ## 04) The < hr > tag
 * This tag is used to draw a horizontal line inside our HTML file.
 * It has several attributes such as: color, size, noshade and others. For more info, check out www.devdocs.io
+
+## 05) Comments 
+* The way to do a comment in HTML is:
+```
+<!-- This is a comment, my friends! -->
+```
