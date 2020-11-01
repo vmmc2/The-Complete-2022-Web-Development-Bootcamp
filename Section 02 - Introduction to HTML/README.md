@@ -49,3 +49,7 @@
 * Unordered lists are also called bullet list, since each element of this type of list is represented using a bullet.
 * The elements of an unordered list must be contained inside a: < li >< /li > tag.
 
+## 11) The < ol > tag
+* This type of tag is used to represent an ordered list in HTML.
+* We can use the atribute "type" to enumerate the elements of the list using roman numerals instead of common integers.
+* The elements that belong to an ordered list must be insde a < li >< /li > tag.
