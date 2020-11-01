@@ -47,5 +47,5 @@
 ## 10) The < ul > tag
 * This type of HTML tag is used to construct an unordered list.
 * Unordered lists are also called bullet list, since each element of this type of list is represented using a bullet.
-* The elements of an unordered list must be contained inside a: <li></li> tag.
+* The elements of an unordered list must be contained inside a: < li >< /li > tag.
 
