@@ -53,3 +53,9 @@
 * This type of tag is used to represent an ordered list in HTML.
 * We can use the atribute "type" to enumerate the elements of the list using roman numerals instead of common integers.
 * The elements that belong to an ordered list must be insde a < li >< /li > tag.
+
+## 12) The < img > tag
+* This specific tag is used when we want to show an image inside our website.
+* We can do this by two different means: We can show an image that is in the Internet or we can show an image that is inside the folder that contains our index.html file.
+* To provide the path of the image, we use the "src" attribute.
+* In case that an error occurs and our HTML file is unable to load the image, we can provide a specific text to be displayed to describe what our image looks like. For that, we use the "alt" attribute.
