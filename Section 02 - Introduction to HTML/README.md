@@ -59,3 +59,11 @@
 * We can do this by two different means: We can show an image that is in the Internet or we can show an image that is inside the folder that contains our index.html file.
 * To provide the path of the image, we use the "src" attribute.
 * In case that an error occurs and our HTML file is unable to load the image, we can provide a specific text to be displayed to describe what our image looks like. For that, we use the "alt" attribute.
+
+## 13) The < a > tag
+* This tag is used to make an user go to another website or page in the current website.
+* It is used in the following way:
+```html
+<a href="current_folder/hobbies.html">My Hobbies</a>
+```
+
