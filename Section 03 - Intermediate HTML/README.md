@@ -19,4 +19,4 @@
 </table>
 ```
 * There are also different types of tags that can be used within a table tag. 
-* A table in HTML is structured in 3 different parts: the header, the body and the footer. To specify the header, we use the < thead >< /thead > tag. To specify the body, we use the < tbody >< /tbody > tag. Finally, to specify the footer, we use the < tfoot >< /tfoot > tag.
+* A table in HTML is structured in 3 different parts: the header, the body and the footer. To specify the header, we use the ```<thead></thead>``` tag. To specify the body, we use the < tbody >< /tbody > tag. Finally, to specify the footer, we use the < tfoot >< /tfoot > tag.
