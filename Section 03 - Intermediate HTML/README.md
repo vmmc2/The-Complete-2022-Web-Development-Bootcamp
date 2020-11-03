@@ -25,6 +25,7 @@
 * This tag is used to create a form inside a webpage. This tag by itself just creates the structure of a form.
 * To populate the form, we must 2 other types of tags: ```<label></label>``` tag and ```<input>``` tag. The label tag is used to give a name to a specific field of a form.
 * On the other hand, we use the input tag to describe how the user should provide the data that we are expecting. To achieve this goal, we must use the HTML attribute called "type" inside the input tag. This attribute can have different values such as: text, color, checkbox, submit, password and many others (For more info, check out the documentation at MDN).
+* One that is interesting is the attribute "file", which allows an user to choose a file from its host.
 * Example of HTML code using the ```<form></form>``` tag:
 ```html
         <form class="" action="index.html" method="post"> <!-- tag para criar um formulario em HTML -->
