@@ -4,6 +4,10 @@
 ## 01) How and Why to use
 * CSS is used when we want to give a style to a particular element inside our HTML file.
 * We can use it in several way: We can use it embedded inside a HTML tag, we can use it inside a ```<style></style>``` tag that exists inside the ```<head></head>``` tag or we can use it inside a separate file that we usually call "style.css".
+* These ways of using CSS are commonly called:
+   * Inline CSS
+   * Internal CSS
+   * External CSS
 
 ## 02) Example of styling the whole body of a HTML file.
 ```html
@@ -30,3 +34,5 @@ body {
   width: 30%; /* Value expressed using percentage */
 }
 ```
+
+
