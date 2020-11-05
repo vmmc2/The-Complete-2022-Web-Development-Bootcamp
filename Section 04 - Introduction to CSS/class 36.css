@@ -1,0 +1,24 @@
+body { /* Estilizando o background da minha pagina index.html */
+    background-color: #EAF6F6; 
+}
+
+hr {
+    border-style: dotted none none none;
+    border-color: grey;
+    border-width: 5px;
+    height: 0px;
+    width: 5%; 
+}
+
+img { /* Definindo as dimensoes da minha foto de perfil em index.html */
+    height: 250px;
+    width: 250px;
+}
+
+h1 {
+    color: #66BFBF;
+}
+
+h3 {
+    color: #66BFBF;
+}
