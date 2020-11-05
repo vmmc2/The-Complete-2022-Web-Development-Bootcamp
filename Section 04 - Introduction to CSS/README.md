@@ -20,3 +20,7 @@
 
 ...
 ```
+
+## 03) Percentage and Absolute Value
+* When we are styling our website we might want to maintain a specific percentage of the whole screen (the width of the body).
+* To do that, we can use different types of values when coding CSS. The first value is "absolute value" and it reffers to the number of pixels in the screen. The second value is "percentage" and it reffers to the percentage.
