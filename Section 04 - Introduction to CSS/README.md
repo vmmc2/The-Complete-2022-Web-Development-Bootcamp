@@ -11,9 +11,9 @@
 <head>
   <meta>
   <title> Example 1 </title>
-  <style>
+  <style> <!-- These lines of code are responsible for changing the whole background color of our webiste. -->
     body {
-      background-color: powderblue;  <!-- These lines of code are responsible for changing the whole background color of our webiste. -->
+      background-color: powderblue; 
     }
   </style>
 </head>
