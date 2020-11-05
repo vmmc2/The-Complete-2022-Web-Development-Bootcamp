@@ -35,4 +35,14 @@ body {
 }
 ```
 
+## 04) Working with Horizontal Rule (hr) and CSS
+```css
+hr {
+  border-style: dotted none none none;
+  border-color: grey;
+  border-width: 5px;
+  height: 0px;
+  width: 5%; 
+}
+```
 
