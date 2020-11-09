@@ -48,4 +48,7 @@ hr {
 
 ## 05) Priority of Inline, Internal and External CSS
 * When we want to stylize the same property of the same HTML element we must keep in mind that the order of priority in CSS follows this rule: Inline CSS -> Internal CSS -> External CSS.
+* Best practice: Do your design using External CSS.
 
+## 06) CSS Syntax
+* Dale
