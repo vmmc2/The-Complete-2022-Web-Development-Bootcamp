@@ -51,4 +51,16 @@ hr {
 * Best practice: Do your design using External CSS.
 
 ## 06) CSS Syntax
-* Dale
+* The CSS syntax is composed by three different elements: The Selector, The Property, The Value.
+  * The Selector: is who you want to change. Is it the h1? the p? the img?
+  * The Property: specifies which property of the HTML element you want to change. Is it the background-color? the font-size?
+  * The Value: specifies the value that you chose to change the HTML element in some visual way.
+* Example of CSS Code:
+```css
+selector {
+  property1: value1;
+  property2: value2;
+  /*  ...  */ /* This is a comment in CSS*/
+  propertyn: valuen;
+}
+```
