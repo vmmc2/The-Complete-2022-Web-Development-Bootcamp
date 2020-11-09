@@ -46,3 +46,6 @@ hr {
 }
 ```
 
+## 05) Preference of Inline, Internal and External CSS
+* When we want to stylize the same property of the same HTML element we must keep in mind that the order of preference in CSS follows this rule: Inline CSS -> Internal CSS -> External CSS.
+
