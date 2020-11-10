@@ -112,3 +112,4 @@ CSS Selector: Id
 * What are the differences between ```Class``` and ```Id```?
   * Id must be used in only one instance per page (HTML file).
   * Class can be used in multiple instances in a page (HTML file). We usually use Class when we want to make a group of instances to behave in the same way.
+* __Important: "Id" and "Class" selectors can be used to override the Tag selectors.__
