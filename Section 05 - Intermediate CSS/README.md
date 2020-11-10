@@ -22,5 +22,5 @@ div{
 ```
 * __Every HTML element is viewed as a box by the browser. This type of model is commonly called: The Box Model.__
 * When we are dealing with the size of a HTML element, there are two different ways of approaching it:
-  * By using pixels: This is like the size of the thing (width, height, border, margin,...) in absolute pixel value.
-  * By using percentage: This is like when we are dealing with a ratio in respect to the size of our viewport (the size of our screen), where 100% corresponds to the size of the whole screen that is being used.
+  * __By using pixels:__ This is like the size of the thing (width, height, border, margin,...) in absolute pixel value.
+  * __By using percentage:__ This is like when we are dealing with a ratio in respect to the size of our viewport (the size of our screen), where 100% corresponds to the size of the whole screen that is being used.
