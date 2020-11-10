@@ -24,3 +24,9 @@ div{
 * When we are dealing with the size of a HTML element, there are two different ways of approaching it:
   * __By using pixels:__ This is like the size of the thing (width, height, border, margin,...) in absolute pixel value.
   * __By using percentage:__ This is like when we are dealing with a ratio in respect to the size of our viewport (the size of our screen), where 100% corresponds to the size of the whole screen that is being used.
+
+## 02) The CSS Box Style
+* The difference between __Margin__ and __Padding:__
+  * Margin: Is the space between HTML elements outside of their borders.
+  * Padding: Is the space between HTML elements when one of the elements is inside another element. It is also in respect to the borders.
+* __Padding can make a HTML element bigger whereas margin cannot make the element bigger.__
