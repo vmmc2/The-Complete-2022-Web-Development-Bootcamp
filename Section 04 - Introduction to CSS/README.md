@@ -72,7 +72,7 @@ selector {
 /* 
 CSS Selector: Tag 
 
-html_tag_name{
+html_tag_name {
   property1: value1;
   property2: value2;
 }
@@ -85,7 +85,7 @@ img {
 /*
 CSS Selector: Class
 
-.html_class_name{
+.html_class_name {
   property1: value1;
   property2: value2;
 }
@@ -94,4 +94,21 @@ CSS Selector: Class
 .broccoli {
   background-color: powderblue;
 }
+
+/*
+CSS Selector: Id
+
+#html_id_name {
+  property1: value1:
+  property2: value2;
+}
+*/
+
+#heading {
+  font-color: blue;
+  font-size: 48px;
+}
 ```
+* What are the differences between ```Class``` and ```Id```?
+  * Id must be used in only one instance per page (HTML file).
+  * Class can be used in multiple instances in a page (HTML file). We usually use Class when we want to make a group of instances to behave in the same way.
