@@ -113,3 +113,5 @@ CSS Selector: Id
   * Id must be used in only one instance per page (HTML file).
   * Class can be used in multiple instances in a page (HTML file). We usually use Class when we want to make a group of instances to behave in the same way.
 * __Important: "Id" and "Class" selectors can be used to override the Tag selectors.__
+* __Important2: You can only apply one "Id" to a HTML element.__
+* __Important3: You can apply more than one "Class" to a HTML element. You separate different classes inside a HTML element using a whitespace character.__
