@@ -64,3 +64,34 @@ selector {
   propertyn: valuen;
 }
 ```
+
+## 07) CSS Selectors
+* When working with CSS, we have basically three major types of CSS Selectors. They are: "tag", "id", "class".
+* We use them in different ways. You will find different examples below:
+```css
+/* 
+CSS Selector: Tag 
+
+html_tag_name{
+  property1: value1;
+  property2: value2;
+}
+*/
+
+img {
+  background-color: red; 
+}
+
+/*
+CSS Selector: Class
+
+.html_class_name{
+  property1: value1;
+  property2: value2;
+}
+*/
+
+.broccoli {
+  background-color: powderblue;
+}
+```
