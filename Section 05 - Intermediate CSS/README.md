@@ -20,4 +20,4 @@ div{
     background-color: #E4F9F5;
 }
 ```
-
+* __Every HTML element is viewed as a box by the browser. This type of model is commonly called: The Box Model.__
