@@ -34,4 +34,4 @@ div{
 ## 03) The CSS Display Property
 * The CSS Display property has four different values: __Block, Inline, Inline-Block, None.__ These values make the HTML elements behave in different ways.
   * __Block:__
-    ** 
+    ->  
