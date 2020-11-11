@@ -30,3 +30,8 @@ div{
   * Margin: Is the space between HTML elements outside of their borders.
   * Padding: Is the space between HTML elements when one of the elements is inside another element. It is also in respect to the borders.
 * __Padding can make a HTML element bigger whereas margin cannot make the element bigger.__
+
+## 03) The CSS Display Property
+* The CSS Display property has four different values: __Block, Inline, Inline-Block, None.__ These values make the HTML elements behave in different ways.
+  * __Block:__
+    ** 
