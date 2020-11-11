@@ -33,5 +33,4 @@ div{
 
 ## 03) The CSS Display Property
 * The CSS Display property has four different values: __Block, Inline, Inline-Block, None.__ These values make the HTML elements behave in different ways.
-  * __Block:__
-    ->  
+  * __Block:__ Block elements are those that take up the whole width of a screen web page. They block any other elements from sitting next to them on the left or on the right. Some examples of HTML elements that are block elements are: ```<p>, <h1> to <h6>, <div>, <ul>, <ol>, <li>, <form>```
