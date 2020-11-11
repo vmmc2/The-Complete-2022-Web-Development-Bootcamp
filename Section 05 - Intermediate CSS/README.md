@@ -33,6 +33,8 @@ div{
 * __IMPORTANT: The ```<span></span>``` tag from HTML can be used to select a specific part of a text (inside a ```<p></p>``` tag for example) and them we can stylize it using a class or an id.__
 
 ## 03) The CSS Display Property
-* The CSS Display property has four different values: __Block, Inline, Inline-Block, None.__ These values make the HTML elements behave in different ways.
+* The CSS Display property has four different values: __Block, Inline, Inline-Block, None.__ These values make the HTML elements behave in different ways. We can change it in the CSS file by accessing the "display" property of a selector and then changing its value to one of the four values above.
   * __Block:__ Block elements are those that take up the whole width of a screen web page. They block any other elements from sitting next to them on the left or on the right. Some examples of HTML elements that are block elements are: ```<p>, <h1> to <h6>, <div>, <ul>, <ol>, <li>, <form>```
   * __Inline:__ Inline elements are those that take up as much space as they need. Therefore, we can put inline elements next to each other on the left or on the right (in other words, we can put inline elements in the same row). Some examples of HTML elements that are inline elements are: ```<span>, <img>, <a>```. __Keep in mind that: YOU CANNOT CHANGE THE "WIDTH" PROPERTY OF AN INLINE HTML ELEMENT.__
+  * __Inline-Block:__ Inline-Block elements are those that can sit next to the other in the same row and can also get their "width" property changed.
+  * __None:__ This value makes the element to disappear from the website as if it never really existed. You can use it to hide a certain element in your webpage. You can also use a CSS property called "visibility" for this same purpose.
