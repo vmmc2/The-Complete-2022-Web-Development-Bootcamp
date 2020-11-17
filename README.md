@@ -5,3 +5,4 @@ My codes and notes for this course
 // 12/11 -> Hoje tbm nao teve nada.
 // 14/11 -> Ainda nada
 //15/11
+* 16/11
