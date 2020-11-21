@@ -6,3 +6,4 @@ My codes and notes for this course
 // 14/11 -> Ainda nada
 //15/11
 * 16/11
+* 17/11
