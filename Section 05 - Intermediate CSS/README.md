@@ -38,6 +38,7 @@ div{
   * __Inline:__ Inline elements are those that take up as much space as they need. Therefore, we can put inline elements next to each other on the left or on the right (in other words, we can put inline elements in the same row). Some examples of HTML elements that are inline elements are: ```<span>, <img>, <a>```. __Keep in mind that: YOU CANNOT CHANGE THE "WIDTH" PROPERTY OF AN INLINE HTML ELEMENT.__
   * __Inline-Block:__ Inline-Block elements are those that can sit next to the other in the same row and can also get their "width" property changed.
   * __None:__ This value makes the element to disappear from the website as if it never really existed. You can use it to hide a certain element in your webpage. You can also use a CSS property called "visibility" for this same purpose. One must keep in mind that, if you are using the "visibility" property, the element will just become invisible but will also "stay" there.
+* __If you want to put a bunch of elements in a row, consider using the "Inline-Block" value.__
   
 ## 04) The CSS Position Property
 * The CSS Position property is commonly used to display the HTML elements of our webpage in a certain position. This property has four different values: __Static, Relative, Absolute, Fixed.__ 
