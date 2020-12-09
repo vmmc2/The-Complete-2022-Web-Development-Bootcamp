@@ -60,3 +60,9 @@ div{
 * The easiest way to do it is using the "text-align" property in CSS. It's commonly used in the parent HTML element of the element that we want to center. __It will center everything inside this parent element that does not have a "width" property.__
 * If we define the "width" property of a specific element, we will see that it will become impossible for us to center this element using the "text-align" property. __So, what do we do in this case? We can use the "margin" property.__ It is recommended that we use the value "auto" when dealing with this type of situation.
 * __How to take an HTML element from the HTML flow? We basically need to change the value of its "position" property from the CSS to "absolute".__ One must keep in mind that it's recommended that the parent element has a position of type "relative".
+
+## 06) Font Styling in CSS
+* We have 5 different font styles but we are going to use only 3 font styles: Serif, Sans-Serif and Monospace. 
+* The monospace font style is special because all letters in this style have the same height and width.
+* You are not going to use "cursive" and neither "fantasy".
+* It's recommended to use what people commonly call: "websafe_fonts".
