@@ -44,7 +44,7 @@ div{
 * The CSS Position property is commonly used to display the HTML elements of our webpage in a certain position. This property has four different values: __Static, Relative, Absolute, Fixed.__ 
   * __Static:__ Is the most common type of position. This just means "go along with the HTML rules and keep it to the default".
   * __Relative:__ Is another value of the Position property. It is used to adjust the position of a HTML element based on its original position (using the value __Static__ for the Position property). In this case, we have four different coordinates: Top, Bottom, Left, Right. When we use this, it is as if the element that has been moved left its own ghost at its original position. __(Works like "margin"). The relative positioning is relative to where the element would have been displayed if it was following the original HTML flow.__ It does not affect the positioning of other elements in the screen.
-  * __Absolute:__ When we use this value for the Position property, we are basically positioning this HTML element in respect to its parent. Take a look of a code snippet that uses this type of positioning:
+  * __Absolute:__ When we use this value for the Position property, we are basically positioning this HTML element in respect to its parent. __It is important to note that this type of positioning actually modifies the positioning of other elements in the screen__. Take a look of a code snippet that uses this type of positioning:
   ```css
   div {
     position: relative;
