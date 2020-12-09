@@ -57,5 +57,5 @@ div{
   * __Fixed:__ This type of positioning makes the HTML element stay in a fixed positioning in respect to the body. If we scroll down the webpage, for example, the HTML element that has a "fixed" position will stay at this specific position while we do the scroll. __It's really useful when we are dealing with headers and navbars.__
 
 ## 05) Aligning HTML elements through CSS
-* The easiest way to do it is using the "text-align" property in CSS. It's commonly used in the parent HTML element of the element that we want to center.
-* If we change some properties of a specific element, we will see that it may become impossible for us to center this element using the "text-align" property. __So, what do we do in this case? We can use the "margin" property.__ It is recommended that we use the value "auto" when dealing with this type of situation.
+* The easiest way to do it is using the "text-align" property in CSS. It's commonly used in the parent HTML element of the element that we want to center. __It will center everything inside this parent element that does not have a "width" property.__
+* If we define the "width" property of a specific element, we will see that it will become impossible for us to center this element using the "text-align" property. __So, what do we do in this case? We can use the "margin" property.__ It is recommended that we use the value "auto" when dealing with this type of situation.
