@@ -59,3 +59,4 @@ div{
 ## 05) Aligning HTML elements through CSS
 * The easiest way to do it is using the "text-align" property in CSS. It's commonly used in the parent HTML element of the element that we want to center. __It will center everything inside this parent element that does not have a "width" property.__
 * If we define the "width" property of a specific element, we will see that it will become impossible for us to center this element using the "text-align" property. __So, what do we do in this case? We can use the "margin" property.__ It is recommended that we use the value "auto" when dealing with this type of situation.
+* __How to take an HTML element from the HTML flow? We basically need to change the value of its "position" property from the CSS to "absolute".__
