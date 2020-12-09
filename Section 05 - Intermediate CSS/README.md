@@ -66,3 +66,11 @@ div{
 * The monospace font style is special because all letters in this style have the same height and width.
 * You are not going to use "cursive" and neither "fantasy".
 * It's recommended to use what people commonly call: "websafe_fonts".
+* But this is not 100% safe. So what do we do? __We use fallbacks.__ Take a look at the code snippet that uses fallbacks:
+```css
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+```
