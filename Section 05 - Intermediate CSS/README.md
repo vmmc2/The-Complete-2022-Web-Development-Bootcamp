@@ -74,3 +74,4 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ```
+* Another option to ensure 100% safe is to use embedded fonts. One common way to do this is to use "Google Fonts".
