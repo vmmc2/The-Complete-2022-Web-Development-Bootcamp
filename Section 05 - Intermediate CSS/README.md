@@ -54,3 +54,4 @@ div{
     right: 30px;
   }
   ```
+  * __Fixed:__ This type of positioning makes the HTML element stay in a fixed positioning in respect to the body. If we scroll down the webpage, for example, the HTML element that has a "fixed" position will stay at this specific position while we do the scroll. __It's really useful when we are dealing with headers and navbars.__
