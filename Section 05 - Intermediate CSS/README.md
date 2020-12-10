@@ -75,3 +75,6 @@ body {
 }
 ```
 * Another option to ensure 100% safe is to use embedded fonts. One common way to do this is to use "Google Fonts".
+
+## 07) Font-Size
+* It is recommended to express the size of HTML elements using percentage. When it comes to font-size, keep in mind that 100% = 16px. So, if we want to express a size of 90px in percentage, we must do the following: 90px/16px = 5.625 -> 5.625 * 100 = 562.5%.
