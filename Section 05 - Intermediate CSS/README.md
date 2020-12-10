@@ -94,3 +94,5 @@ h1 {
     font-size: 5.625em; /* since h1 is inside the body, it will apply the "2em" font-size and it will also apply on top of it the font-size of "5.625em". So, in the end, the font-size of h1 will be greater than "5.625em". */
 }
 ```
+* __If you want to avoid the problem described above, then you should use "rem" (also called root em). This type of unit does not get affected by upstream size changes. In other words, you don't need to worry about inheritance and parents. It's easier to debug.__
+* __Prefer to use "rem" instead of "px", "em", "%".__
