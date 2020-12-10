@@ -78,3 +78,19 @@ body {
 
 ## 07) Font-Size
 * It is recommended to express the size of HTML elements using percentage. When it comes to font-size, keep in mind that 100% = 16px. So, if we want to express a size of 90px in percentage, we must do the following: 90px/16px = 5.625 -> 5.625 * 100 = 562.5%.
+* This same logic applies when we are dealing with another unit for font-size called "em". In this case, we have the following: 1em = 16px = 100%.
+* Prefer to use "em" or "%" because it uses dynamic font-size. It is important for accessibility.
+* Be careful when using "%" or "em" because it inherits the size of the font from its parents and "adds" the size on top of it. Take a look at the code below:
+```css
+body {
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 5.625em; /* since h1 is inside the body, it will apply the "2em" font-size and it will also apply on top of it the font-size of "5.625em". So, in the end, the font-size of h1 will be greater than "5.625em". */
+}
+```
