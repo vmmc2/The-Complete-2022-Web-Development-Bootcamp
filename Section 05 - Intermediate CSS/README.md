@@ -96,3 +96,6 @@ h1 {
 ```
 * __If you want to avoid the problem described above, then you should use "rem" (also called root em). This type of unit does not get affected by upstream size changes. In other words, you don't need to worry about inheritance and parents. It's easier to debug.__
 * __Prefer to use "rem" instead of "px", "em", "%".__
+
+## 08) Another way of centering HTML elements in CSS
+* One way to do it is to set the margin (margin-top, margin-left, margin-right, margin-bottom) to the value: __"auto"__.
