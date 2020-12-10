@@ -99,3 +99,4 @@ h1 {
 
 ## 08) Another way of centering HTML elements in CSS
 * One way to do it is to set the margin (margin-top, margin-left, margin-right, margin-bottom) to the value: __"auto"__.
+* __When we are dealing with percentage, keep in mind that the percentage in a HTML element is relative to the parent element.__
