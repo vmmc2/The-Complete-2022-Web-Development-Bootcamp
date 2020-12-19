@@ -31,3 +31,17 @@
 </nav>
 ```
 * Para esse código acima funcionar é necessário fazer os imports de links para CSS do Bootstrap no ```head``` do "index.html" bem como fazer os imports dos scripts de JS do Bootstrap no final ```body``` do "index.html".
+
+## GridModel com Bootstrap
+* Em Bootstrap 4 e nas versões seguintes, podemos organizar as informações na tela por meio de um grid (tabela). Isso nada mais é do que um conjunto de rows (linhas), que podem ser preenchidas com columns (colunas).
+* Observe o primeiro exemplo abaixo: __Grid com colunas que tomam todo o espaço disponível na linha.__
+```html
+<div class="row">
+  <div class="column" style="background-color: red; border: 1px solid;">
+    col
+  </div>
+  <div class="column" style="background-color: blue; border: 1px solid;">
+    col
+  </div>
+</div>
+```
