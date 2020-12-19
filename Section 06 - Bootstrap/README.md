@@ -76,8 +76,14 @@
 </div>
 ```
 * Quando estamos tratando de responsividade. No Bootstrap 4, temos 4 tipos de tela (baseado no tamanho):
-  * extra-small (xs)
-  * small (sm)
-  * medium (md)
-  * large (lg)
-  * extra-large (xl)
+  * small (sm) -> Celular
+  * medium (md) -> Tablet
+  * large (lg) -> Notebook
+  * extra-large (xl) -> Desktop
+* O ideal é colocar detalhes de quantas colunas desejamos em cada um dos layouts responsivos (small, medium, large, extra-large). Observe o código a seguir:
+```html
+<div class="col-lg-3 col-md-4" style="background-color: yellow; border: 1px solid;">
+  col-lg-3 col-md-4
+</div>
+<!-- Nesse exemplo temos 4 colunas de tamanho 3 em telas grandes e 3 colunas de tamanho 4 em telas de tamanho médio. -->
+```
