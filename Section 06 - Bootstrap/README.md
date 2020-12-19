@@ -75,3 +75,9 @@
   </div>
 </div>
 ```
+* Quando estamos tratando de responsividade. No Bootstrap 4, temos 4 tipos de tela (baseado no tamanho):
+  * extra-small (xs)
+  * small (sm)
+  * medium (md)
+  * large (lg)
+  * extra-large (xl)
