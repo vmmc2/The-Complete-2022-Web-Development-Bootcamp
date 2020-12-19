@@ -34,7 +34,7 @@
 
 ## GridModel com Bootstrap
 * Em Bootstrap 4 e nas versões seguintes, podemos organizar as informações na tela por meio de um grid (tabela). Isso nada mais é do que um conjunto de rows (linhas), que podem ser preenchidas com columns (colunas).
-* Observe o primeiro exemplo abaixo: __Grid com colunas que tomam todo o espaço disponível na linha.__
+* Observe o primeiro exemplo abaixo: __Grid com colunas que tomam todo o espaço disponível na linha (Não é responsivo).__
 ```html
 <div class="row">
   <div class="column" style="background-color: red; border: 1px solid;">
@@ -42,6 +42,24 @@
   </div>
   <div class="column" style="background-color: blue; border: 1px solid;">
     col
+  </div>
+</div>
+```
+* Observe o segundo exemplo abaixo: __Grid com colunas que tomam um espaço definido pelo programador referente ao tamanho da linha (Não é responsivo).__
+* Esse espaço é definido da seguinte forma: Uma linha (row) completa tem um tamanho de 12 unidades. Nós, como programadores, podemos fazer com que as colunas tenham um tamanho que vai de 1, 2, 3, 4, ..., 9, 10, 11, 12.
+```html
+<div class="row">
+  <div class="col-6" style="background-color: green; border: 1px solid;">
+    col-6
+  </div>
+  <div class="col-3" style="background-color: green; border: 1px solid;">
+    col-3
+  </div>
+  <div class="col-2" style="background-color: green; border: 1px solid;">
+    col-2
+  </div>
+  <div class="col-1" style="background-color: green; border: 1px solid;">
+    col-1
   </div>
 </div>
 ```
