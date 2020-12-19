@@ -63,3 +63,15 @@
   </div>
 </div>
 ```
+* Por fim, observe o último exemplo: __Grid com colunas que tomam um espaço definido pelo programador referente ao tamanho da linha (É responsivo).__
+* Funciona da mesma maneira que o exemplo descrito acima:
+```html
+<div class="row">
+  <div class="col-md-6" style="background-color: green; border: 1px solid;">
+    col-md-6
+  </div>
+  <div class="col-md-6" style="background-color: yellow; border: 1px solid;">
+    col-md-6
+  </div>
+</div>
+```
