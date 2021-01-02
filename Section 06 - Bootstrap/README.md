@@ -88,3 +88,9 @@
 </div>
 <!-- Nesse exemplo temos 4 colunas de tamanho 3 em telas grandes e 3 colunas de tamanho 4 em telas de tamanho médio. -->
 ```
+
+## Containers em Bootstrap
+* Container é o componente mais simples e básico do Bootstrap. Dentro dele, podemos colocar diversos outros componentes do Bootstrap, de forma a construir algo extremamente customizável e de nosso interesse.
+* Existem dois tipos principais de containers:
+  * container: É responsivo mas apresenta quebras quando as dimensões da tela vão mudando.
+  * container-fluid: É responsivo e não apresenta quebras quando as dimensões da tela vão mudando. Ao contrário, isso ocorre de forma fluida.
