@@ -97,3 +97,7 @@
 
 ## Fonts Awesome em Botões
 * Geralmente, para utilizar os ícones do FontsAwesome, o mais comum é inserir a tag ```<i></i>``` que é fornecida pelo CDN dentro do botão desejado (class "btn").
+
+## Rotação de elementos HTML em CSS.
+* Para realizar uma rotação de um elemento HTML por meio de CSS, devemos fazer uso da propriedade ```transform``` e atribuir a ela, a função ```rotate(x degree)```. 
+* Se "x" for positivo, a rotação será no sentido horário. Caso "x" seja negativo, a rotação será feita no sentido anti-horário.
