@@ -94,3 +94,6 @@
 * Existem dois tipos principais de containers:
   * container: É responsivo mas apresenta quebras quando as dimensões da tela vão mudando.
   * container-fluid: É responsivo e não apresenta quebras quando as dimensões da tela vão mudando. Ao contrário, isso ocorre de forma fluida.
+
+## Fonts Awesome em Botões
+* Geralmente, para utilizar os ícones do FontsAwesome, o mais comum é inserir a tag ```<i></i>``` que é fornecida pelo CDN dentro do botão desejado (class "btn").
