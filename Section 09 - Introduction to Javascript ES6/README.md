@@ -38,5 +38,5 @@ window.alert(myName);
 ```javascript
 var s1 = "Victor";
 var s2 = "Miguel";
-console.log(s1 + " " + s2);
+console.log(s1 + " " + s2);  // Esse comando vai printar: "Victor Miguel".
 ```
