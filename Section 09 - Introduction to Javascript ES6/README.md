@@ -15,6 +15,7 @@ alert("Hello World!");
 
 ## Data Types
 * Em Javascript, temos alguns tipos de dados básicos. São eles:
-  * Strings
-  * Numbers
-  * Boolean
+  * strings
+  * numbers
+  * boolean
+* Existe uma função de Javascript chamada de ```typeof()```, a qual é usada para sabermos qual o tipo de uma certa variável ou literal.
