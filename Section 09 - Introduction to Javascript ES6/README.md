@@ -12,3 +12,9 @@ window.alert("Hello World!");
 
 alert("Hello World!");
 ```
+
+## Data Types
+* Em Javascript, temos alguns tipos de dados básicos. São eles:
+  * Strings
+  * Numbers
+  * Boolean
