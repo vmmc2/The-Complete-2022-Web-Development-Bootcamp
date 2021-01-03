@@ -45,3 +45,11 @@ console.log(s1 + " " + s2);  // Esse comando vai printar: "Victor Miguel".
 var s = "Victor Miguel";
 console.log("The string s has: " +  s.length +  " characters.");
 ```
+* É possível extrair partes de uma string (substrings), por meio de um método chamado ```splice()```. Esse método funciona da mesma forma que o operador ```[:]``` em Python. De forma mais detalhada, ele funciona da seguinte maneira: splice(index inicial incluído, index final não-incluído).
+* Observe um exemplo de código abaixo:
+```javascript
+var myName = "Victor Miguel";
+var firstName = myName.slice(0, 6);
+var lastName = myName.slice(7, 13);
+console.log("Your first name is: " + firstName + ". And your last name is: " + lastName);
+```
