@@ -26,3 +26,10 @@ prompt("Insira seu nome: ");
   * numbers
   * boolean
 * Existe uma função de Javascript chamada de ```typeof()```, a qual é usada para sabermos qual o tipo de uma certa variável ou literal.
+* Para criar uma variável em Javascript, fazemos o uso da keyword ```var```. Observe um exemplo abaixo em que criamos uma variável e em seguida alteramos o seu contéudo:
+```javascript
+var myName = "Victor";
+console.log(myName);
+myName = "Vivi";
+window.alert(myName);
+```
