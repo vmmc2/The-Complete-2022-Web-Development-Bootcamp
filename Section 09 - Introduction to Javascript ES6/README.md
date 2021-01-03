@@ -34,3 +34,9 @@ console.log(myName);
 myName = "Vivi";
 window.alert(myName);
 ```
+* Em strings, é permitido e possível realizar a concatenação fazendo o uso do sinal ```+```. Observe um exemplo abaixo:
+```javascript
+var s1 = "Victor";
+var s2 = "Miguel";
+console.log(s1 + " " + s2);
+```
