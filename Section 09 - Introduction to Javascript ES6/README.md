@@ -13,6 +13,13 @@ window.alert("Hello World!");
 alert("Hello World!");
 ```
 
+## Prompt
+* Os prompts são uma espécie de alert que possuem input. Isto é, permitem que o usuário insira informações nele, que serão salvas posteriormente.
+* Para codar um prompt, basta seguir o exemplo a seguir:
+```javascript
+prompt("Insira seu nome: ");
+```
+
 ## Data Types
 * Em Javascript, temos alguns tipos de dados básicos. São eles:
   * strings
