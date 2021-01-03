@@ -40,3 +40,8 @@ var s1 = "Victor";
 var s2 = "Miguel";
 console.log(s1 + " " + s2);  // Esse comando vai printar: "Victor Miguel".
 ```
+* É possível descobrir a quantidade de caracteres de uma string de forma simples, por meio da property ```length```.  Faremos algo do tipo no exemplo abaixo:
+```javascript
+var s = "Victor Miguel";
+console.log("The string s has: " +  s.length +  " characters.");
+```
