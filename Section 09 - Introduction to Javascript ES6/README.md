@@ -53,4 +53,4 @@ var firstName = myName.slice(0, 6);
 var lastName = myName.slice(7, 13);
 console.log("Your first name is: " + firstName + ". And your last name is: " + lastName);
 ```
-* Existem dois métodos de strings que são usados para mudar o "case" das strings. Existe o método ```toUpperCase();```, que é responsável por fazer com que todos as letras de uma string fiquem em caixa alta (maiúsculas). Além disso, existe o méotodo ```toLowerCase();```, que é responsável por fazer com que todas as letras de uma string não fiquem em caixa alta (fiquem minúsculas).
+* Existem dois métodos de strings que são usados para mudar o "case" das strings. Existe o método ```toUpperCase();```, que é responsável por fazer com que todos as letras de uma string fiquem em caixa alta (maiúsculas). Além disso, existe o método ```toLowerCase();```, que é responsável por fazer com que todas as letras de uma string não fiquem em caixa alta (fiquem minúsculas).
