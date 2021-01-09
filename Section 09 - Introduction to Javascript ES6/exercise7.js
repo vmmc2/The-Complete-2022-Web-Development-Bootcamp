@@ -6,15 +6,15 @@
 
  
 function main(){
-   move();
-   move();
-   move();
-   move();
+   moveFourTimes();
    turnLeft();
+   moveFourTimes();
+}
+
+function moveFourTimes(){
    move();
    move();
    move();
    move();
 }
-
 
