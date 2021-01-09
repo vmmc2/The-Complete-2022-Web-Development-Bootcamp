@@ -3,7 +3,8 @@
 ## Convenções
 * A convenção adotada pela maioria dos programadores de Javascript é usar double quotes ("").
 * Entretanto, em alguns casos específicos, é recomendado utilizar single quotes (''). Veremos quais casos são esses mais na frente.
-* Para atribuir os nomes de variáveis, usamos "camelCase".
+* Para atribuir os nomes de variáveis, usamos a notação "camelCase".
+* Para atribuir os nomes de funções, também usamos a notação "camelCase".
 
 ## Alert
 * Os alerts são comandos que podem ser dados por meio de código escrito em Javascript. O alert é aquela janelinha que aparece quando desejamos, por exemplo, fechar uma certa página da Web.
@@ -54,3 +55,14 @@ var lastName = myName.slice(7, 13);
 console.log("Your first name is: " + firstName + ". And your last name is: " + lastName);
 ```
 * Existem dois métodos de strings que são usados para mudar o "case" das strings. Existe o método ```toUpperCase();```, que é responsável por fazer com que todos as letras de uma string fiquem em caixa alta (maiúsculas). Além disso, existe o método ```toLowerCase();```, que é responsável por fazer com que todas as letras de uma string não fiquem em caixa alta (fiquem minúsculas).
+
+## Functions
+* Funções são estruturas de linguagens de programação que permitem que possamos executar, de forma repetitiva, trechos de código.
+* Exemplo de declaração e chamada de uma função em Javascript:
+```javascript
+function sendGrettings(){
+  console.log("Hello there!");
+}
+
+sendGreetings();
+```
