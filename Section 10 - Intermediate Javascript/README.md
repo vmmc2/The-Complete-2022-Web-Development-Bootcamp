@@ -14,3 +14,10 @@
  1 == "1"  -> True
  1 === "1" -> False
 ```
+
+## Arrays
+* Arrays are used to store a collection of items that have the same type.
+* Below, there is a code snippet that shows how you can declare an array in Javascript:
+```javascript
+var myArray = []; // An empty array.
+```
