@@ -28,3 +28,7 @@ var numbers = [11, 12, 13, 14, 15]; // An array with 5 elements (numbers).
 * We can check if a certain element is in an array through an array method called ```array.includes(element)```, which returns a boolean (true or false).
 * We can add an element to the last position of the array using ```array.push(element)```.
 * We can delete the last element from the array using ```array.pop()```.
+
+## While Loop vs. For Loop
+* While Loop -> We use to check whether a state is true or false.
+* For Loop -> We use to iterate through something.
