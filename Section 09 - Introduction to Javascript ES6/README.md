@@ -66,3 +66,9 @@ function sendGrettings(){
 
 sendGreetings();
 ```
+
+## Useful Mathematical Functions in Javascript
+* ```Math.pow(base, exponent)```
+* ```Math.ceil(number)```
+* ```Math.floor(number)```
+* ```Math.random()``` -> This function is going to generate a random number in this interval: [0, 0.9999999999999999]
