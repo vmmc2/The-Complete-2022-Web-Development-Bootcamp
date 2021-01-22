@@ -26,4 +26,6 @@ Document -> HTML -> Head -> ...
                  -> Body -> ...
 ```
 * Every object (HTML element) that is inside the DOM has __properties__ and __methods__ that can be used to make our website dynamic.
+* __Some examples of properties are: ```.innerHTML```, ```.style```, ```.firstChild```, ```.lastChild```.__
+* __Some examples of methods are: ```.click()```, ```.appendChild()```, ```.setAttribute()```.__
   
