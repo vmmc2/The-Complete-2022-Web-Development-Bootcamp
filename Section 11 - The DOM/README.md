@@ -9,4 +9,14 @@
     alert("Hello World!");
 </script>
 ```
+  * External: It's the best option. To use this, we must put the path to our JS file inside the ```<script></script>``` tag in the HTML file. Take a look at the example below:
+```HTML
+<script src="index.js" charset="utf-8"></script>
+```
+
+## Important Notes
+* __Always put the path to the CSS file in the head of the HTML file.__
+* __Always put the path to the JS file at the end of the ```<body></body>``` tag in the HTML file.__
+
+## DOM (Document Object Model)
   
