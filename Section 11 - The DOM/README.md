@@ -29,3 +29,4 @@ Document -> HTML -> Head -> ...
 * __Some examples of properties are: ```.innerHTML```, ```.style```, ```.firstElementChild```, ```.lastElementChild```.__
 * __Some examples of methods are: ```.click()```, ```.appendChild()```, ```.setAttribute()```.__
   
+## Selecting HTML elements with Javascript
