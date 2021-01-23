@@ -74,5 +74,5 @@ document.querySelector('button').classList.toggle('invisible'); //Activating and
 ```
 
 ## Differences between ```.innerHTML``` and ```.textContent```
-* The ```.innerHTML``` property is going to return everything that is inside the specified HTML tag, including other HTML tags.
+* The ```.innerHTML``` property is going to return everything that is inside the specified HTML tag, including other HTML tags. Through this, we can add HTML code on the fly. And remember: Always specify it as a string.
 * Whereas, ```.textContent``` is going to return just the text content inside the specified HTML tag. It's not going to include other HTML tags in its return value.
