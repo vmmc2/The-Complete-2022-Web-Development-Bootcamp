@@ -60,3 +60,13 @@ document.querySelector("ul li.list a").style.color = "red";
 * We can use JS for that purpose, but keep in mind that the name of some CSS properties might be different in JS due to the fact that JS use camelCase notation to its methods and properties.
 * For more info about these names in JS, search for ```DOM Style Object```.
 * __In JS, all values must be specified as a string.__
+
+## Separation of Concerns (Structure vs Style vs Behaviour)
+* HTML vs CSS vs JavaScript
+  * HTML -> For content and structure only.
+  * CSS -> For styling the structure/content.
+  * JavaScript (JS) -> For behaviour and functionality.
+* We can use JavaScript code to change the style of an HTML element. We can make this happen by adding pre-made CSS classes. To do that, we must know that every HTML element has an attribute called ```classList``` which contains the names of every class that is associated to that specific HTML element. And using this, we can add and remove CSS classes to this specific HTML element. Take a look below:
+```JavaScript
+document.querySelector('button').classList.add('invisible'); //Adding a new CSS class called 'invisible' to the 'button' HTML element.
+```
