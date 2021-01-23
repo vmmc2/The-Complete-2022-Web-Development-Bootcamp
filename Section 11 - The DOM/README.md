@@ -55,3 +55,7 @@ document.querySelector("ul li.list a").style.color = "red";
 ## About ```document.querySelectorAll()```
 * It is a different method from ```document.querySelector()``` because instead of returning just the first HTML element that matches a specific selector, it's going to return all HTML elements that match that specific selector.
 * It returns an array with all the desired HTML elements.
+
+## Using JavaScript to manipulate the style (CSS) of HTML elements
+* We can use JS for that purpose, but keep in mind that the name of some CSS properties might be different in JS due to the fact that JS use camelCase notation to its methods and properties.
+* For more info about these names in JS, search for ```DOM Style Object```.
