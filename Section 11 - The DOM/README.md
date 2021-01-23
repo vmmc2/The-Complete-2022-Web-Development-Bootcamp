@@ -36,5 +36,9 @@ Document -> HTML -> Head -> ...
 document.getElementsByTagName('li')[2].style.color = "purple";
 //In the code snippet above, I changed the color of the content in the third "li" element to purple.
 ```
-2) ```document.getElementsByClassName("nameOfTheClass")```: This method is used to fetch all HTML elements that have the same ClassName. It's going to return an array. Even we only have one HTML element that has that particular ClassName.
+2) ```document.getElementsByClassName('nameOfTheClass')```: This method is used to fetch all HTML elements that have the same ClassName. It's going to return an array. Even we only have one HTML element that has that particular ClassName.
 3) ```document.getElementById('nameOfTheID')```: This method is used to fetch the HTML element that has that particular ID.
+4) ```document.querySelector('nameOfHTMLElement or .className or #IDName')```: This method is used to select HTML elements from a HTML file using different types of selector. As an example:
+  * We can use it to select a simple HTML element: ```Javascript  document.querySelector('h1')```
+  * We can use it to select a HTML element based on its className: ```JavaScript document.querySelector('.btn')```
+  * We can use it to select a HTML element based on its ID: ```JavaScript document.querySelector('#major-card')```
