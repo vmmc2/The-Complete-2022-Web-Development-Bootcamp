@@ -72,3 +72,7 @@ document.querySelector('button').classList.add('invisible'); //Adding a new CSS 
 document.querySelector('button').classList.remove('invisible'); //Remove the CSS class called 'invisible' to the 'button' HTML element.
 document.querySelector('button').classList.toggle('invisible'); //Activating and Deactivating the CSS class called 'invisible' to the 'button' HTML element.
 ```
+
+## Differences between ```.innerHTML``` and ```.textContent```
+* The ```.innerHTML``` property is going to return everything that is inside the specified HTML tag, including other HTML tags.
+* Whereas, ```.textContent``` is going to return just the text content inside the specified HTML tag. It's not going to include other HTML tags in its return value.
