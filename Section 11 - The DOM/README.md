@@ -31,14 +31,19 @@ Document -> HTML -> Head -> ...
   
 ## Selecting HTML elements with Javascript
 * In this section, we are going to see a bunch of different methods that are used to select HTML elements with JavaScript. Let's check them out:
-1) ```document.getElementsByTagName('li')```: This method is used to select HTML elements through their names. It's going to fetch all the HTML elements that have this particular tag name. It's going to return an array that contains all elements with that particular tag name. Check this example of use case:
+* ```document.getElementsByTagName('li')```: This method is used to select HTML elements through their names. It's going to fetch all the HTML elements that have this particular tag name. It's going to return an array that contains all elements with that particular tag name. Check this example of use case:
 ```JavaScript
 document.getElementsByTagName('li')[2].style.color = "purple";
 //In the code snippet above, I changed the color of the content in the third "li" element to purple.
 ```
-2) ```document.getElementsByClassName('nameOfTheClass')```: This method is used to fetch all HTML elements that have the same ClassName. It's going to return an array. Even we only have one HTML element that has that particular ClassName.
-3) ```document.getElementById('nameOfTheID')```: This method is used to fetch the HTML element that has that particular ID.
-4) ```document.querySelector('nameOfHTMLElement or .className or #IDName')```: This method is used to select HTML elements from a HTML file using different types of selector. As an example:
+* ```document.getElementsByClassName('nameOfTheClass')```: This method is used to fetch all HTML elements that have the same ClassName. It's going to return an array. Even we only have one HTML element that has that particular ClassName.
+* ```document.getElementById('nameOfTheID')```: This method is used to fetch the HTML element that has that particular ID.
+* ```document.querySelector('nameOfHTMLElement or .className or #IDName')```: This method is used to select HTML elements from a HTML file using different types of selector. As an example:
   * We can use it to select a simple HTML element: ```Javascript  document.querySelector('h1')```
   * We can use it to select a HTML element based on its className: ```JavaScript document.querySelector('.btn')```
   * We can use it to select a HTML element based on its ID: ```JavaScript document.querySelector('#major-card')```
+
+## More about ```document.querySelector()```
+* We can apply our tagNames in a certain way in order to select a specific HTML element.
+* Let's say that we want to select an ```<a></a>``` inside a ```<li></li>```. In order to do that, we can do: ```document.querySelector('li a');```. We separate them using spaces because they are different elements.
+* Let's say that we want to select a ```<li></li>``` that also has a class of ```item```. To do that, we can code: ```document.querySelector('li.item');```. Here, we do not separate using spaces because we are dealing with only one HTML element.
