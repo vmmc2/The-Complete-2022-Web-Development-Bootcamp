@@ -69,4 +69,6 @@ document.querySelector("ul li.list a").style.color = "red";
 * We can use JavaScript code to change the style of an HTML element. We can make this happen by adding pre-made CSS classes. To do that, we must know that every HTML element has an attribute called ```classList``` which contains the names of every class that is associated to that specific HTML element. And using this, we can add and remove CSS classes to this specific HTML element. Take a look below:
 ```JavaScript
 document.querySelector('button').classList.add('invisible'); //Adding a new CSS class called 'invisible' to the 'button' HTML element.
+document.querySelector('button').classList.remove('invisible'); //Remove the CSS class called 'invisible' to the 'button' HTML element.
+document.querySelector('button').classList.toggle('invisible'); //Activating and Deactivating the CSS class called 'invisible' to the 'button' HTML element.
 ```
