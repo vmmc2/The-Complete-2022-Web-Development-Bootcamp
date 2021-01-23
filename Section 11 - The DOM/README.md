@@ -76,3 +76,17 @@ document.querySelector('button').classList.toggle('invisible'); //Activating and
 ## Differences between ```.innerHTML``` and ```.textContent```
 * The ```.innerHTML``` property is going to return everything that is inside the specified HTML tag, including other HTML tags. Through this, we can add HTML code on the fly. And remember: Always specify it as a string.
 * Whereas, ```.textContent``` is going to return just the text content inside the specified HTML tag. It's not going to include other HTML tags in its return value.
+
+## Changing attributes inside HTML elements
+* To get a list of attributes of a specific HTML element, use: 
+```JavaScript
+document.querySelector('a').attributes;
+```
+* To get the value of a certain attribute of a specific HTML element, use:
+```JavaScript
+document.querySelector('a').getAttribute('href');
+```
+* To change the value of a certain attribute of a specific HTML element, use:
+```JavaScript
+document.querySelector('a').setAttribute('href', 'https://www.google.com');
+```
