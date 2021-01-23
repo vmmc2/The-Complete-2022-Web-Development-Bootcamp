@@ -30,3 +30,11 @@ Document -> HTML -> Head -> ...
 * __Some examples of methods are: ```.click()```, ```.appendChild()```, ```.setAttribute()```.__
   
 ## Selecting HTML elements with Javascript
+* In this section, we are going to see a bunch of different methods that are used to select HTML elements with JavaScript. Let's check them out:
+1) ```document.getElementsByTagName('li')```: This method is used to select HTML elements through their names. It's going to fetch all the HTML elements that have this particular tag name. It's going to return an array that contains all elements with that particular tag name. Check this example of use case:
+```JavaScript
+document.getElementsByTagName('li')[2].style.color = "purple";
+//In the code snippet above, I changed the color of the content in the third "li" element to purple.
+```
+2) ```document.getElementsByClassName("nameOfTheClass")```: This method is used to fetch all HTML elements that have the same ClassName. It's going to return an array. Even we only have one HTML element that has that particular ClassName.
+3) ```document.getElementById('nameOfTheID')```: This method is used to fetch the HTML element that has that particular ID.
