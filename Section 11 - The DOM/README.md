@@ -44,7 +44,10 @@ document.getElementsByTagName('li')[2].style.color = "purple";
   * We can use it to select a HTML element based on its ID: ```JavaScript document.querySelector('#major-card')```
 
 ## More about ```document.querySelector()```
-* We can apply our tagNames in a certain way in order to select a specific HTML element.
+* We can apply our tagNames in a certain way in order to select a specific HTML element (In respect to hierarchy). Take a look at the example below:
+```JavaScript
+document.querySelector("ul li.list a").style.color = "red";
+```
 * Let's say that we want to select an ```<a></a>``` inside a ```<li></li>```. In order to do that, we can do: ```document.querySelector('li a');```. We separate them using spaces because they are different elements.
 * Let's say that we want to select a ```<li></li>``` that also has a class of ```item```. To do that, we can code: ```document.querySelector('li.item');```. Here, we do not separate using spaces because we are dealing with only one HTML element.
 * __IMPORTANT: When dealing with ```document.querySelector()```, we only get back the first HTML element that matches the specific selector.__
