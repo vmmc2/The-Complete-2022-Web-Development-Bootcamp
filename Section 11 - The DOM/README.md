@@ -59,3 +59,4 @@ document.querySelector("ul li.list a").style.color = "red";
 ## Using JavaScript to manipulate the style (CSS) of HTML elements
 * We can use JS for that purpose, but keep in mind that the name of some CSS properties might be different in JS due to the fact that JS use camelCase notation to its methods and properties.
 * For more info about these names in JS, search for ```DOM Style Object```.
+* __In JS, all values must be specified as a string.__
