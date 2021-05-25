@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6{
 }
 ```
 
-### Combined Selectors
+#### Combined Selectors
 * Used when you want to apply a specific style to a HTML element that has more than one class or id.
 * Structure of Combined Selectors: ```selector1selector2```
 * Example:
@@ -52,3 +52,6 @@ h1, h2, h3, h4, h5, h6{
   color: red;
 }
 ```
+
+### Selector Priority
+* The priority of the selectors that are used to apply styles is (from higher to lower priorities): id ---> class ---> html elements
