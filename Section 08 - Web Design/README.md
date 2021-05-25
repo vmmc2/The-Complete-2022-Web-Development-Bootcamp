@@ -26,3 +26,9 @@
 
 ## Typography
 * Try to use only 2 different fonts in a design. More than that is troll.
+
+## WebPage Layout
+* We dealing with blocks of text, each block should have 30 to 40 characters per line. More or less than that is troll.
+* Align texts using consistency. Center-aligned title with center-aligned text. Left-aligned title with left-aligned text.
+* Use White Space to give highlight to a specific section of your website.
+* Think about your audience.
