@@ -42,3 +42,13 @@ h1, h2, h3, h4, h5, h6{
   font-size: 36px;
 }
 ```
+
+### Combined Selectors
+* Used when you want to apply a specific style to a HTML element that has more than one class or id.
+* Structure of Combined Selectors: ```selector1selector2```
+* Example:
+```css
+.container.title{
+  color: red;
+}
+```
