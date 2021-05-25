@@ -55,3 +55,5 @@ h1, h2, h3, h4, h5, h6{
 
 ### Selector Priority
 * The priority of the selectors that are used to apply styles is (from higher to lower priorities): id ---> class ---> html elements
+* Use CSS id sparingly. __Only use it when you ABSOLUTELY HAVE TO.__ One can also use it in HTML sections.
+* Always prefer to give only 1 CSS class to a HTML element. Simplicity always!
