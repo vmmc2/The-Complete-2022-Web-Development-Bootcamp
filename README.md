@@ -18,3 +18,27 @@ h1, h2, h3, h4, h5, h6{
 * Try to do general and broad styling to common CSS selectors. When you want to apply a particular style to a specific part of your website, create a CSS class or a CSS id to do it.
 
 * If there are many instances of the same style being applied in the CSS file, then you probably need to refactor it. And to do so, you need to write these styles as least as you can. Usually, you only need to write the specific style only once in a specific CSS class. And then you can encapsulate every part of the website that you want to have this style inside this new CSS class.
+
+### Combining CSS Selectors
+* One can combine different CSS selectors in order to apply more specific styles.
+* There are many ways to combine CSS selectors. Let's see some of these ways:
+
+#### Multiple Selectors
+* Used when we want to apply the same style to different HTML elements.
+```css
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat-Bold";
+  color: #ffffff;
+}
+```
+
+#### Hierarchical Selectors
+* Used when you want to apply very specific styles to some HTML elements of your website.
+* Structure of Hierarchical Selectors: ```selector1 selector2 {}```
+* Example: Say you want to apply a specific style to a HTML element that has a class ".title" that is also inside a HTML element that has a class ".container-fluid". Then we would write the following CSS:
+```css
+.container-fluid .title{
+  font-family: sans-serif;
+  font-size: 36px;
+}
+```
