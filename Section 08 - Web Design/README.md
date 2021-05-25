@@ -23,3 +23,6 @@
 * Use 2 or 3 colours in your website.
 * Use colours that are close to each other in the colour palette. This is commonly called __Analogous Palette.__
 * __Very Useful Tool: Adobe Color, colorhunt.co__
+
+## Typography
+* Try to use only 2 different fonts in a design. More than that is troll.
