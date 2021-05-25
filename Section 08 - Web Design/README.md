@@ -19,6 +19,7 @@
 #### Purple
 * It's related to __royalth, wealth, feminity.__
 
+## Final Tips about Colour Theory
 * Use 2 or 3 colours in your website.
 * Use colours that are close to each other in the colour palette. This is commonly called __Analogous Palette.__
 * __Very Useful Tool: Adobe Color, colorhunt.co__
