@@ -17,4 +17,4 @@ h1, h2, h3, h4, h5, h6{
 
 * Try to do general and broad styling to common CSS selectors. When you want to apply a particular style to a specific part of your website, create a CSS class or a CSS id to do it.
 
-* If there are many instances of the same style being applied in the CSS file, then you probably need to refactor it. And to do so, you need to write these styles as least as you can.
+* If there are many instances of the same style being applied in the CSS file, then you probably need to refactor it. And to do so, you need to write these styles as least as you can. Usually, you only need to write the specific style only once in a specific CSS class. And then you can encapsulate every part of the website that you want to have this style inside this new CSS class.
