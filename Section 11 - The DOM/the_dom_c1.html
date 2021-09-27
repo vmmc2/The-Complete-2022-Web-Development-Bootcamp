@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="var name = prompt('Qual seu nome?'); alert('Hello ' + name)">
+        <!-- Esse atributo "onload" eh o que permite que um site use javascript (de forma inline)-->
+        <h1> Hello World </h1>    
+    
+        <!-- Segue abaixo uma outra forma de executar codigo js na sua pagina web -->
+        <!-- Ele eh executado primeiro do que o codigo js presente no atributo "onload" -->
+        <!--
+        <script type="text/javascript">
+
+            alert("Hello Man in the box!!!!!!");
+        </script>
+        -->
+
+        <!-- Essa eh a ultima forma de adicionar codigo js a sua pagina web -->
+        <!-- Nesse caso em particular, a posicao em que a tag "script" eh colocada no codigo html importa bastante-->
+        <script src="index.js" charset="utf-8"></script>    
+        <!-- Importante lembrar que o browser vai ler o codigo HTML de cima para baixo (e esquerda para direita)-->
+        <!-- por causa disso, eh importante colocar a tag script referente ao codigo js no final do body-->
+        <!-- pois assim, toda a parte visual/estatica do html eh carregada. Por outro lado, codigo CSS-->
+        <!-- deve ser o primeiro a ser carregada, para que a estilizacao possa ser aplicada ao html.-->
+        <!-- Por causa disso, a tag script referente ao codigo css fica dentro de head (dps de title)-->
+    </body>
+</html>
