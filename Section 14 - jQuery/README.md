@@ -126,3 +126,7 @@ $(HTML_ELEMENT).on(EVENTO, function(){
 ```js
   $("h1").append("<button>New</button>");
 ```
+
+### Creating animations with jQuery
+* There are several animation effects that we can create using jQuery such as: fadeIn, fadeOut, toggle, slideUp, slideDown, animate, etc...
+* Check the documentation if you want to learn more about it.
