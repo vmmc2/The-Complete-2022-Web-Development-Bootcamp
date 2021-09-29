@@ -65,3 +65,26 @@ $("h1").html("<em> ciao </em>"); //This changes the previous html content inside
   $("a").attr("href", "https://www.google.com"); // set the value of the attribute "href" to "https://www.google.com"
 ```
 
+### Adding eventListeners with jQuery
+* Adding an eventListener to a "h1" element that listens to "click" events:
+```js
+  $("h1").click(function() {
+    $("h1").css("color", "purple");
+  });
+```
+* What if we want to add an eventListener to several HTML elements? Take a look at the comparison below:
+```js
+// 1) Vanilla/Pure JavaScript
+for(var i = 0; i < document.querySelectorAll("button").length; i++){
+  document.querySelectorAll("button")[i].addEventListener("click", function(){
+    document.querySelector("h1").style.color = "purple";
+  });
+}
+
+// 2) jQuery JavaScript
+$("button").click(function(){
+  $("h1").css("color", "purple");
+});
+
+
+```
