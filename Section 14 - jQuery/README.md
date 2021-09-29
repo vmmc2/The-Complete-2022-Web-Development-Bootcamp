@@ -85,6 +85,10 @@ for(var i = 0; i < document.querySelectorAll("button").length; i++){
 $("button").click(function(){
   $("h1").css("color", "purple");
 });
-
-
+```
+* Same thing applies if we wanted to detect keypresses:
+```js
+("input").keypress(function(event){
+  console.log(event.key); //Shows in the console which key was pressed.
+});
 ```
