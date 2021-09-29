@@ -21,6 +21,7 @@
 ```
 
 ### Manipulating Styles with jQuery
+* __Again, one thing that one must keep in mind is that the function below always selects all HTML elements that satisfy a certain criteria.__
 * One can manipulating CSS styles with very ease using jQuery.
 * __Let's see an example of how to set a css property (and its css value) of a specific HTML element.__
 ```js
@@ -47,3 +48,14 @@ $(".btn").removeClass("big-font small-margin");
 ```js
 $("h3").hasClass("margin-50"); //This function returns a boolean (true or false).
 ```
+
+### Manipulating Text with jQuery
+* __Remember, using jQuery apply changes to all HTML elements that satisfy a certain criteria.__
+* As we saw earlier, one can maniputaling text using vanilla JavaScript through 2 different attributes: ```innerHTML``` and ```textContent```.
+* With jQuery, one can do the exactly same thing. However, now we are going to use methods:
+```js
+$("h1").text("bye-bye! Farewell!"); //This changes the previous text content of h1 to "bye-bye! Farewell!"
+$("h1").html("<em> ciao </em>"); //This changes the previous html content inside the h1 tags to "<em> ciao </em>"
+```
+
+
