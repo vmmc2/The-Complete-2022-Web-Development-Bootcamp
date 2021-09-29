@@ -88,7 +88,15 @@ $("button").click(function(){
 ```
 * Same thing applies if we wanted to detect keypresses:
 ```js
-("input").keypress(function(event){
+$("input").keypress(function(event){
   console.log(event.key); //Shows in the console which key was pressed.
+});
+// To detect keys being pressed inside the HTML page, we can use: $(document) or $("body")
+```
+* We can be more flexible when adding eventListeners to HTML elements:
+* __These events mentioned below can be found at the MDN website.__
+```js
+$(HTML_ELEMENT).on(EVENTO, function(){
+  //FUNCAO DE CALLBACK
 });
 ```
