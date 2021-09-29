@@ -19,3 +19,31 @@
   var hd2 = jQuery("h1");
   var allBtnClasses = $(".btn");
 ```
+
+### Manipulating Styles with jQuery
+* One can manipulating CSS styles with very ease using jQuery.
+* __Let's see an example of how to set a css property (and its css value) of a specific HTML element.__
+```js
+$("h1").css("font-size", "20px");
+//The first parameter is the css property that we are going to change and the second parameter is the css value to which we want to change the css property.
+```
+* __It's also possible to get the value of a css property of a specific HTML element.__
+```js
+$("h1").css("font-size"); //This is going to return the string "12px".
+```
+* __We can also add CSS classes using jQuery.__
+```js
+$("h1").addClass("big-font");
+//We can add more than one CSS class by separating the classes names by whitespaces.
+$(".btn").addClass("big-font small-margin");
+```
+* __We can also remove CSS classes using jQuery.__
+```js
+$("h1").removeClass("big-font");
+//We can remove more than one CSS class by separating the classes names by whitespaces.
+$(".btn").removeClass("big-font small-margin");
+```
+* __Finally, we can also check if a HTML element has a specific CSS class.__
+```js
+$("h3").hasClass("margin-50"); //This function returns a boolean (true or false).
+```
