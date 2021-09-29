@@ -58,4 +58,10 @@ $("h1").text("bye-bye! Farewell!"); //This changes the previous text content of 
 $("h1").html("<em> ciao </em>"); //This changes the previous html content inside the h1 tags to "<em> ciao </em>"
 ```
 
+### Manipulating Attributes with jQuery
+* We can get/set the value of attributes of HTML elements using jQuery in the following way:
+```js
+  $("img").attr("src"); // get the value of the attribute "src" from the img HTML element.
+  $("a").attr("href", "https://www.google.com"); // set the value of the attribute "href" to "https://www.google.com"
+```
 
