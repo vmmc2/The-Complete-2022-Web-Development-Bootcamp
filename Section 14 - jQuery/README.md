@@ -100,3 +100,29 @@ $(HTML_ELEMENT).on(EVENTO, function(){
   //FUNCAO DE CALLBACK
 });
 ```
+
+### Adding and Removing HTML elements with jQuery
+* One can select and delete/remove a HTML element by the following way:
+```js
+  // Remember that the method shown below applies to all HTML elements that satisfy the criteria.
+  $("h1").remove();
+  $(".btn").remove();
+  $("#identity").remove();
+```
+* One can add HTML code to the HTML element through 4 different ways. These ways are: ```before```, ```after```, ```prepend```, ```append```.
+* __```before```: Adds a HTML element right before the selected HTML element.__
+```js
+  $("h1").before("<button>New</button>");
+```
+* __```after```: Adds a HTML element right after the selected HTML element.__
+```js
+  $("h1").after("<button>New</button>");
+```
+* __```prepend```: Adds a HTML element inside the selected HTML element but right after the opening tag.__
+```js
+  $("h1").prepend("<button>New</button>");
+```
+* __```append```: Adds a HTML element inside the selected HTML element but right before the closing tag.__
+```js
+  $("h1").append("<button>New</button>");
+```
