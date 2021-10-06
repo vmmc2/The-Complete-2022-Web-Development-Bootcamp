@@ -11,6 +11,7 @@
 * Esse comando serve para adicionar um arquivo para a chamada "tracking area" do repositorio local Git.
 * Quando a gente cria um arquivo dentro de um diretorio, o repositorio local do Git nao vai saber de imediato da existencia dele. Alem disso, nao vai ser capaz de "trackear" mudancas que tenha acontecido no arquivo. Para isso, devemos adicionar o arquivo a "tracking area" por meio do comando visto acima.
 * Quando um arquivo vai para a "tracking area" ele ta pronto para ser commitado.
+* Eh possivel adicionar todos os arquivos do working directory para a "tracking area" usando o comando ```git add .```.
 
 ### ```git commit```
 * Comando que serve para dar commit em um arquivo que ta presente dentro de um repositorio Git local e tambem dentro da "tracking area".
