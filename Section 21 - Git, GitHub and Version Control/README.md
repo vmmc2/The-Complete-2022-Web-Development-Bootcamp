@@ -21,3 +21,10 @@
 ### ```git log```
 * Esse comando serve para verificar quais foram os commits executados em um repositorio especifico.
 * Para commit possui: uma hash (que o identifica), um campo identificando o autor do commit e um campo identificando a data na qual o commit foi efetuado.
+
+### ```git diff "nome_arquivo"```
+* Esse comando serve para verificar as diferencas entre a versao atual de um arquivo e a ultima versao de safepoint desse mesmo arquivo (no repositorio local Git).
+* Pelo que eu entendi, o Git consegue pegar as diferencas em um arquivo desde que ele esteja na "tracking area". Ou seja, desde que eu tenha dado "git add" no arquivo.
+
+### ```git checkout "nome_arquivo"```
+* Esse comando serve para fazer com que um arquivo volte para a sua ultima versao que foi commitada no repositorio local do Git em questao.
