@@ -31,9 +31,19 @@
 ### ```git checkout "nome_arquivo"```
 * Esse comando serve para fazer com que um arquivo volte para a sua ultima versao que foi commitada no repositorio local do Git em questao.
 
-## Linkando Repositorios Locais e Repositorios Remotos (Repositorios no GitHub)
+### ```git rm --cached -r .```
+* Esse comando server para retirar todos os arquivos que atualmente estejam presentes na tracking area do meu repositorio local.
+
+## Linkando Repositorio Local e Repositorio Remoto (Repositorio no GitHub)
 * Caso a gente queira passar arquivos do nosso repositorio local para um repositorio remoto (GitHub), podemos usar a seguinte sequencia de comandos (lembrando que devemos estar na pasta em que o repositorio local se encontra
 ```
 git remote add origin link_do_repositorio_GitHub
 git push -u origin master
 ```
+
+## .gitignore
+* Usar um arquivo chamado ".gitignore" eh uma boa pratica para indicar quais arquivos nao devem ser commitados para o repositorio local (e possivelmente para o repositorio remoto).
+* Util para ocultar arquivos que contenham senhas, API keys, arquivos com configuracoes, etc...
+* Para usa-lo, entre na pasta/diretorio em que os arquivos se encontram. Crie (__atraves da linha de comando__) um arquivo chamado ".gitignore".
+* Feito isso, abra esse arquivo atraves da linha de comando (lembre-se que este eh um arquivo oculto).
+* Com o arquivo ".gitignore" aberto, basta colocar em cada uma das linhas dele os nomes dos arquivo que devem ser ignorados quando um commit for executado. (Eh uma boa pratica ignorar o arquivo ".DS_Store".
