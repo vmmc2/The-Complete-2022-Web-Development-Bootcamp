@@ -47,3 +47,8 @@ git push -u origin master
 * Para usa-lo, entre na pasta/diretorio em que os arquivos se encontram. Crie (__atraves da linha de comando__) um arquivo chamado ".gitignore".
 * Feito isso, abra esse arquivo atraves da linha de comando (lembre-se que este eh um arquivo oculto).
 * Com o arquivo ".gitignore" aberto, basta colocar em cada uma das linhas dele os nomes dos arquivo que devem ser ignorados quando um commit for executado. (Eh uma boa pratica ignorar o arquivo ".DS_Store".
+
+## Cloning
+* Cloning nada mais eh do que copiar um repositorio do GitHub para a sua propria maquina local.
+* Para isso, abra a linha de comando. Em seguida, entre no diretorio/pasta desejada e execute o comando: ```git clone link_do_repositorio_no_GitHub```.
+* O comando acima vai criar uma copia do repositorio GitHub em questao como se ele fosse um diretorio qualquer.
