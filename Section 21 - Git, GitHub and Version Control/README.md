@@ -1,5 +1,7 @@
 # Section 21 - Git, GitHub and Version Control
 
+## Comandos Iniciais
+
 ### ```git init```
 * Esse comando serve para criar um repositorio local.
 * Use esse comando no terminal para criar um repositorio local dentro de um diretorio/pasta desejada.
@@ -28,3 +30,10 @@
 
 ### ```git checkout "nome_arquivo"```
 * Esse comando serve para fazer com que um arquivo volte para a sua ultima versao que foi commitada no repositorio local do Git em questao.
+
+## Linkando Repositorios Locais e Repositorios Remotos (Repositorios no GitHub)
+* Caso a gente queira passar arquivos do nosso repositorio local para um repositorio remoto (GitHub), podemos usar a seguinte sequencia de comandos (lembrando que devemos estar na pasta em que o repositorio local se encontra
+```
+git remote add origin link_do_repositorio_GitHub
+git push -u origin master
+```
