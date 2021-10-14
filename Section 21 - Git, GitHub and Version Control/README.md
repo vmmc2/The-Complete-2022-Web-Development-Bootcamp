@@ -41,6 +41,9 @@ git remote add origin link_do_repositorio_GitHub
 git push -u origin master
 ```
 
+## Braching and Merging
+* lalala testando 1,2,3 testando.
+
 ## .gitignore
 * Usar um arquivo chamado ".gitignore" eh uma boa pratica para indicar quais arquivos nao devem ser commitados para o repositorio local (e possivelmente para o repositorio remoto).
 * Util para ocultar arquivos que contenham senhas, API keys, arquivos com configuracoes, etc...
