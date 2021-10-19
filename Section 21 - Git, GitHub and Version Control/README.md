@@ -44,6 +44,8 @@ git push -u origin master
 ## Braching and Merging
 * Comando para criar uma nova branch dentro de um repositório local git: ```git branch nome_da_branch```.
 * Comando para ver quantas branches existem dentro de um repositório local git: ```git branch```. Ao dar esse comando, a branch atual será indicada por meio do caractere ```*```.
+* Comando para trocar da minha branch atual para uma outra branch: ```git checkout nome_da_outra_branch```. Perceba que eu posso realizar commits e modificações independentes nessa minha outra branch. Caso as modificações tragam bons resultados, elas podem ser unidas à branch principal (master branch), por meio de um comando de merge.
+* Caso eu queira dar merge de uma branch com a master branch (branch principal), eu devo, primeiramente, ir para a master branch (```git checkout master```). Em seguida, devo executar o seguinte comando: ```git merge nome_da_branch_que_quero_dar_merge```.
 
 ## .gitignore
 * Usar um arquivo chamado ".gitignore" eh uma boa pratica para indicar quais arquivos nao devem ser commitados para o repositorio local (e possivelmente para o repositorio remoto).
