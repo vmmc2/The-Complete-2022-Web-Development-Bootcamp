@@ -14,8 +14,8 @@
 
 ## HTTP Response Types
 * Existem basicamente 5 tipos de respostas HTTP:
-  * 1) Informational Responses (100 - 199)
-  * 2) Sucessful Responses (200 - 299)
-  * 3) Redirects (300 - 399)
-  * 4) Client Errors (400 - 499)
-  * 5) Server Errors (500 - 599)
+  * Informational Responses (100 - 199)
+  * Sucessful Responses (200 - 299)
+  * Redirects (300 - 399)
+  * Client Errors (400 - 499)
+  * Server Errors (500 - 599)
