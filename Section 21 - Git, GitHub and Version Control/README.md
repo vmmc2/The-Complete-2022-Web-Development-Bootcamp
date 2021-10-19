@@ -42,6 +42,8 @@ git push -u origin master
 ```
 
 ## Braching and Merging
+* Comando para criar uma nova branch dentro de um repositório local git: ```git branch nome_da_branch```.
+* Comando para ver quantas branches existem dentro de um repositório local git: ```git branch```. Ao dar esse comando, a branch atual será indicada por meio do caractere ```*```.
 
 ## .gitignore
 * Usar um arquivo chamado ".gitignore" eh uma boa pratica para indicar quais arquivos nao devem ser commitados para o repositorio local (e possivelmente para o repositorio remoto).
