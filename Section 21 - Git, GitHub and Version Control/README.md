@@ -42,9 +42,6 @@ git push -u origin master
 ```
 
 ## Braching and Merging
-* lalala testando 1,2,3 testando.
-* testando mais um pouco (monkas).
-* disapointment.
 
 ## .gitignore
 * Usar um arquivo chamado ".gitignore" eh uma boa pratica para indicar quais arquivos nao devem ser commitados para o repositorio local (e possivelmente para o repositorio remoto).
