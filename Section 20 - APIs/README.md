@@ -10,3 +10,4 @@
 * Paths são usados para obter informações específicas de uma API. Normalmente, são separados por ```/```.
 ### Parameters
 * Parameters são utilizados para realizar consultas/queries a uma API. A primeira query deve começar com um caractere ```?```. Cada consulta é constituida por um par key-value expresso no seguinte formato: ```key=value```. Se eu tiver mais de uma consulta para fazer, elas devem estar separadas pelo caractere ```&```.
+* Vale ressaltar que a ordem dos parameters não importa.
