@@ -19,3 +19,5 @@
   * Redirects (300 - 399)
   * Client Errors (400 - 499)
   * Server Errors (500 - 599)
+
+## Random Bullshit
