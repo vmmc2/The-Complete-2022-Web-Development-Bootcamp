@@ -20,4 +20,7 @@
   * Client Errors (400 - 499)
   * Server Errors (500 - 599)
 
-## Random Bullshit
+## JSON
+* Significa JavaScript Object Notation.
+* Trata-se de uma notação utilizada para o envio e recebimento de dados muito utilizada em desenvolvimento Web. Basicamente, trata-se de uma string que representa um objeto de JavaScript.
+* Existem outros formatos usados para transmissão de dados na Web como, por exemplo: XML ou HTML.
