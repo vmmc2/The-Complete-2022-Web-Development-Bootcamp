@@ -56,3 +56,14 @@ res.write("<h2> This is a header 2 </h2>")
 res.write("<p> This is a paragraph </p>")
 res.send()
 ```
+
+## HTML Forms
+* The ```<form></form>``` tag is extremely useful in web applications because it allows the user to send info from the browser to the server. Usually, a form has several inputs of different types (and, normally, each input has a label associated to it) and a button of type ```submit``` that is used to send the information from the client side (the browser) to the server. Take a look at the simple example below:
+```javascript
+<form action="/" method="post">
+    <label for="cityInput"> City Name: </label>
+    <input id="cityInput" type="text" name="cityName">
+    <button type="submit"> Go </button>
+</form>
+```
+* The ```<form></form>``` tag is used to send data/info to a specific route of our server. __In the example above, we are sending data to the root route using the POST method.__
