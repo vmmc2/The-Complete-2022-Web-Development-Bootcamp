@@ -67,3 +67,14 @@ res.send()
 </form>
 ```
 * The ```<form></form>``` tag is used to send data/info to a specific route of our server. __In the example above, we are sending data to the root route using the POST method.__
+* __In order to retrieve the data that was send to the server through a POST request, we must install a third-party package called ```body-parser``` (This can be done using the command ```npm i body-parser``` in the terminal. This package is used to retrieve the data from the body of the request sent to the server (```req.body```).__
+* In order to use the body parser properly, we must add the following lines inside our ```app.js``` file:
+```javascript
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({extended: true}));
+```
+* __In order to access data from a specific field inside a form, we must use the name of the field (The ```name``` attribute of the ```input``` tag). In this specific case, we can use:__
+```javascript
+const cityNameExample = req.body.cityName;
+```
