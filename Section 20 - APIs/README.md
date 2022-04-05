@@ -24,3 +24,7 @@
 * Significa JavaScript Object Notation.
 * Trata-se de uma notação utilizada para o envio e recebimento de dados muito utilizada em desenvolvimento Web. Basicamente, trata-se de uma string que representa um objeto de JavaScript.
 * Existem outros formatos usados para transmissão de dados na Web como, por exemplo: XML ou HTML.
+
+## Connecting to an API
+* There are several ways of doing so. The most famous use the following modules: __"https", "request", "got" and "axios".__
+* __In this course, we will be using the "https" module since it does not require a third-party library installation.__
