@@ -83,3 +83,11 @@ const cityNameExample = req.body.cityName;
 1) express ```npm i express```
 2) body-parser ```npm i body-parser```
 3) request ```npm i request```
+
+## Express and static (local) files
+* In order for Express.js serve static (local) files correctly, we must use a special function provided by Express.js
+* We need to put the line below inside our ```app.js``` file:
+```javascript
+app.use(express.static("public"));
+```
+* __The "public" is the name of a folder that will contain the static/local files. In order to refer to these files, we use relative pathing (beginning at the public folder).__
