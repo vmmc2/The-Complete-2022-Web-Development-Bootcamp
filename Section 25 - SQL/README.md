@@ -124,4 +124,6 @@ WHERE id = 1
 * __Pay attention: If you don't provide a condition in the DELETE command, it will delete all the data present in the target table.__
 
 ### Relationships, Foreign Keys and Inner Joins in SQL(MySQL)
-* 
+* In SQL, we can create relationships between the tables of the database by using foreign keys.
+* __Formally, a foreign key is a key that is used to link to tables together. A foreign key is a field/column (or collection of fields/columns) in one table that refer to the primary key in another table.__
+* __The table containing the foreign key is called the child table whereas the candidate key is called the parent table.__ 
