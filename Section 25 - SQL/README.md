@@ -47,7 +47,7 @@ VALUES (2, "Pencil")
 ### Reading data (record) from a database (SQL/MySQL)
 * The most common way of doing so is by using the keyword __SELECT.__
 * Let's take a look on the most common cases of reading data from a table in SQL
-#### Case 1: Reading (getting) all columns of a table in SQL.__
+#### Case 1: Reading (getting) all columns of a table in SQL.
 * Syntax:
 ```SQL
 SELECT * FROM table_name;
@@ -56,7 +56,7 @@ SELECT * FROM table_name;
 ```SQL
 SELECT * FROM products;
 ```
-#### Case 2: Reading (getting) only some columns of a table in SQL.__
+#### Case 2: Reading (getting) only some columns of a table in SQL.
 * Syntax:
 ```SQL
 SELECT column1_name, column2_name FROM table_name;
@@ -65,7 +65,7 @@ SELECT column1_name, column2_name FROM table_name;
 ```SQL
 SELECT name, price FROM products;
 ```
-#### Case 3: Reading the content of a particular row of a table in SQL.__
+#### Case 3: Reading the content of a particular row of a table in SQL.
 * Syntax:
 ```SQL
 SELECT * FROM table_name WHERE condition
