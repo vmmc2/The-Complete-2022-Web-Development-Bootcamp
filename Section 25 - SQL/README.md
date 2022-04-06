@@ -43,3 +43,35 @@ INSERT INTO products (id, name)
 VALUES (2, "Pencil")
 ```
 * __The missing values will be filled with NULL.__
+
+### Reading data (record) from a database (SQL/MySQL)
+* The most common way of doing so is by using the keyword __SELECT.__
+* Let's take a look on the most common cases of reading data from a table in SQL
+#### Case 1: Reading (getting) all columns of a table in SQL.__
+* Syntax:
+```SQL
+SELECT * FROM table_name;
+```
+* Example:
+```SQL
+SELECT * FROM products;
+```
+#### Case 2: Reading (getting) only some columns of a table in SQL.__
+* Syntax:
+```SQL
+SELECT column1_name, column2_name FROM table_name;
+```
+* Example:
+```SQL
+SELECT name, price FROM products;
+```
+#### Case 3: Reading the content of a particular row of a table in SQL.__
+* Syntax:
+```SQL
+SELECT * FROM table_name WHERE condition
+```
+* Example:
+```
+SELECT * FROM products WHERE id=1
+```
+* __If you navigate through w3schools website you will find many examples of operators that can be used inside the condition of a WHERE keyword in SQL.__
