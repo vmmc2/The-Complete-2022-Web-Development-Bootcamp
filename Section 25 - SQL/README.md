@@ -127,3 +127,44 @@ WHERE id = 1
 * In SQL, we can create relationships between the tables of the database by using foreign keys.
 * __Formally, a foreign key is a key that is used to link to tables together. A foreign key is a field/column (or collection of fields/columns) in one table that refer to the primary key in another table.__
 * __The table containing the foreign key is called the child table whereas the candidate key is called the parent table.__ 
+* Take a look at the example below in which we create a new table called "orders" that will create a link between the "products" table and the "customers" table:
+* __```orders``` table:__
+```SQL
+CREATE TABLE orders(
+	id INT NOT NULL,
+  	order_number INT,
+  	customer_id INT,
+  	product_id INT,
+  	PRIMARY KEY (id),
+  	FOREIGN KEY (customer_id) REFERENCES customers(id),
+  	FOREIGN KEY (product_id) REFERENCES products(id)
+);
+```
+* __```customers``` table:__
+```SQL
+CREATE TABLE customers(
+	id INT NOT NULL,
+  	name STRING,
+  	address STRING,
+  	PRIMARY KEY (id)
+);
+```
+* __```products``` table:__
+```SQL
+CREATE TABLE products(
+	id INT NOT NULL,
+  	name STRING,
+  	price MONEY, stock INT,
+  	PRIMARY KEY (id)
+)
+```
+* The power of linking tables and creating new ones that represent the relation between two or more tables reside in the keyword __JOIN.__
+* There are several types of __JOIN__, each of them is useful for a different case. To find more info about each type of __JOIN__, visit __w3schools.__
+* For now, we will focus on the __INNER JOIN.__
+* Syntax:
+```SQL
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+```
