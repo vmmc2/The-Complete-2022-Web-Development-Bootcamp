@@ -76,7 +76,9 @@ SELECT * FROM products WHERE id=1
 ```
 * __If you navigate through w3schools website you will find many examples of operators that can be used inside the condition of a WHERE keyword in SQL.__
 
-### Updating data (records) of a table in SQL (MySQL)
+### Updating a table in SQL (MySQL)
+* There are 2 particular cases when it comes to updating a table in SQL.
+#### Case 1: Updating the values of certain columns of specific records that obey a certain condition
 * Let's say you want to update/change the value of some columns in a table. How would you do that?
 * Below, we have a generic code snippet that shows how to do so and also an example:
 * Syntax:
@@ -91,3 +93,35 @@ UPDATE products
 SET price = 2.00
 WHERE id=1
 ```
+#### Case 2: Adding, updating or destroy columns of a certain table in SQL
+* In this case, what we need to do is to __ALTER__ the table.
+* We are going to cover only the operation responsible for adding new columns to a specific table in SQL. If you want to learn more about the other types of operations, take a look at w3schools.
+* Below, we have the code snippet and the example related to addition of a new column to a table in SQL.
+* Syntax:
+```SQL
+ALTER TABLE target_table_name
+ADD new_column_name data_type
+```
+* Example:
+```SQL
+ALTER TABLE products
+ADD stock INT
+```
+
+### Deleting data (certain records) in SQL (MySQL)
+* Let's say you want to delete/destroy certain records of table in SQL. How can you do that?
+* Below, you can find both a code snippet and an example that show you how to do so.
+* Syntax:
+```SQL
+DELETE FROM target_table_name
+WHERE condition
+```
+* Example:
+```SQL
+DELETE FROM products
+WHERE id = 1
+```
+* __Pay attention: If you don't provide a condition in the DELETE command, it will delete all the data present in the target table.__
+
+### Relationships, Foreign Keys and Inner Joins in SQL(MySQL)
+* 
