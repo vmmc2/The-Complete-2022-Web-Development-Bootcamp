@@ -75,3 +75,19 @@ SELECT * FROM table_name WHERE condition
 SELECT * FROM products WHERE id=1
 ```
 * __If you navigate through w3schools website you will find many examples of operators that can be used inside the condition of a WHERE keyword in SQL.__
+
+### Updating data (records) of a table in SQL (MySQL)
+* Let's say you want to update/change the value of some columns in a table. How would you do that?
+* Below, we have a generic code snippet that shows how to do so and also an example:
+* Syntax:
+```SQL
+UPDATE target_table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition
+```
+* Example:
+```SQL
+UPDATE products
+SET price = 2.00
+WHERE id=1
+```
