@@ -33,7 +33,7 @@ INSERT INTO products
 VALUES (1, "Pen", 1.20)
 ```
 * __It's important to mention that the values passed inside ```VALUES (...)``` must be in the same order of the values of the created table (product).__
-* __An important scenario appears when we don't have all the values for a specific record and we want to store this same record inside our table. We must do so in a different way. In order to do so, you must specify for which columns you already have the values. Take a look at the code snippet and the example below:
+* __An important scenario appears when we don't have all the values for a specific record and we want to store this same record inside our table. We must do so in a different way. In order to do so, you must specify for which columns you already have the values. Take a look at the code snippet and the example below:__
 ```SQL
 INSERT INTO target_table_name (column1_name, column4_name)
 VALUES (value_column1, value_column4)
@@ -42,3 +42,4 @@ VALUES (value_column1, value_column4)
 INSERT INTO products (id, name)
 VALUES (2, "Pencil")
 ```
+* __The missing values will be filled with NULL.__
