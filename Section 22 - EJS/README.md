@@ -31,3 +31,7 @@ app.get("/", function(req, res){
 });
 ```
 * As you can see above, you will not use the methods ```res.send()``` or ```res.sendFile()``` anymore. __Instead, to work with EJS, you must use a new method called ```res.render()```. This method receives two parameters. The first one is the name of the ```.ejs``` file that will be displayed to the browser and the second parameter is a JSON that contains key-value pairs representing variables and their respective values that are going to be displayed inside the ```.ejs``` file.__
+* __In a ```views``` file, you can render the value of a variable passed by the server by using the following syntax:
+```HTML
+<%= variable_whose_value_you_want_to_show %>
+```
