@@ -63,3 +63,4 @@ app.get("/", function(req, res){
   * ```var``` -> Global
   * ```let``` -> Local
   * ```const``` -> Local
+* __Good Practice: AVOID USING ```var```. USE ```let```.__
