@@ -20,7 +20,7 @@
 * __Documents in MongoDB are equivalent to Rows in SQL.__
 * In MongoDB, each document represent a single data record.
 
-## Create Operations
+## Create Operations in MongoDB
 * There are 2 types of Create operations in MongoDB:
 * ```db.name_of_collection.insertOne()``` -> This method will insert only one record inside a collection of a database. The argument that is passed is a JavaScript object that works like a document that will be inserted. Take a look at the example below:
 ```javascript
@@ -34,13 +34,13 @@ db.users.insertOne(
 ```
 * ```db.name_of_collection.insertMany()``` -> This method will insert multipe records inside a collection of a database. The argument that is passed is a list containing several JavaScript objects that represent the documents to be stored in the database.
 
-## Read Operations
+## Read Operations in MongoDB
 * In order to do Read operations in MongoDB you must use the ```db.name_of_collection.find(query, projection)``` method, which, as you can see, has 2 optional parameters.
 * If you don't provide any of these 2 optional parameters, then this method will return all documents that are inside the collection.
 * The ```query``` parameter is used to impose constraints in order to select only the documents that satisfy those constraints. Such constraints must be passed in key-value pair format inside a JavaScript object. __In order to know how to apply this ```query``` parameter, you should take a look at the MongoDB documentation.__
 * The ```projection``` parameter is used to restrict which key-value pairs of the document should be shown in the output. More details about it can be found in the documentation. __By default, the ```_id``` field will always be shown.__
 
-## Update Operations
+## Update Operations in MongoDB
 * MongoDB also has update operations that allow you to update the content of documents inside a collection of a database.
 * The most common way of doing an update operation in MongoDB is by using the following method: ```db.name_of_collection.updateOne(query, modification)```
 * The ```query``` parameter is used to impose constraints in order to select only the documents that satisfy those constraints. Such constraints must be passed in key-value pair format inside a JavaScript object. __In order to know how to apply this ```query``` parameter, you should take a look at the MongoDB documentation.__
@@ -51,5 +51,31 @@ db.users.insertOne(
 db.products.updateOne({_id: 1}), {$set: {stock: 32}})
 ```
 
-## Delete Operations
-* MongoDB offers 2 options of methods to execute delete operations. These methods are: ```db.name_of_collection.deleteOne(query)``` and ```db.name_of_collection.deleteMany(query)```. The ```query``` parameter receives the constraints that we want to apply in order to select which documents will be deleted from the collection inside the database.
+## Delete Operations in MongoDB
+* MongoDB offers 2 options of methods to execute delete operations. These methods are: ```db.name_of_collection.deleteOne(query)``` and ```db.name_of_collection.deleteMany(query)```. 
+* The ```query``` parameter receives the constraints that we want to apply in order to select which documents will be deleted from the collection inside the database.
+
+## Relationships in MongoDB
+* Relationships in MongoDB are usually implemented using the idea of __embedding documents inside documents.__
+* This idea suits well the concept of 1-N relationships.
+* As an example, let's say that we have a ```products``` collection. Each products inside this ```products``` collection can be reviewed by users. In other words, each product can have N reviews related to it. Let's see how we would implement this idea in MongoDB.
+```javascript
+db.products.insertOne({
+  _id: 2,
+  name: "Pencil",
+  price: 1.20,
+  stock: 12,
+  review: [
+    {
+      authorName: "Daniel Johns",
+      rating: 5,
+      review: "This is a fantastic product!"
+    },
+    {
+      authorName: "Eddie Vedder",
+      rating: 4,
+      review: "This pencil is really good."
+    }
+  ]
+})
+```
