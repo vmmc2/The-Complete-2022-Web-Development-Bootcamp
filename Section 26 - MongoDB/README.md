@@ -39,3 +39,14 @@ db.users.insertOne(
 * If you don't provide any of these 2 optional parameters, then this method will return all documents that are inside the collection.
 * The ```query``` parameter is used to impose constraints in order to select only the documents that satisfy those constraints. Such constraints must be passed in key-value pair format inside a JavaScript object. __In order to know how to apply this ```query``` parameter, you should take a look at the MongoDB documentation.__
 * The ```projection``` parameter is used to restrict which key-value pairs of the document should be shown in the output. More details about it can be found in the documentation. __By default, the ```_id``` field will always be shown.__
+
+## Update Operations
+* MongoDB also has update operations that allow you to update the content of documents inside a collection of a database.
+* The most common way of doing an update operation in MongoDB is by using the following method: ```db.name_of_collection.updateOne(query, modification)```
+* The ```query``` parameter is used to impose constraints in order to select only the documents that satisfy those constraints. Such constraints must be passed in key-value pair format inside a JavaScript object. __In order to know how to apply this ```query``` parameter, you should take a look at the MongoDB documentation.__
+* The ```modification``` parameter is used to tell the database which fields (key-value pairs) of the selected document(s) should be update and how the should be changed.
+* __It's a good idea to take a look at the documentation of this method in the MongoDB website.__
+* Example:
+```javascript
+db.products.updateOne({_id: 1}), {$set: {stock: 32}})
+```
