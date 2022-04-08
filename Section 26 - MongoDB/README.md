@@ -50,3 +50,6 @@ db.users.insertOne(
 ```javascript
 db.products.updateOne({_id: 1}), {$set: {stock: 32}})
 ```
+
+## Delete Operations
+* MongoDB offers 2 options of methods to execute delete operations. These methods are: ```db.name_of_collection.deleteOne(query)``` and ```db.name_of_collection.deleteMany(query)```. The ```query``` parameter receives the constraints that we want to apply in order to select which documents will be deleted from the collection inside the database.
