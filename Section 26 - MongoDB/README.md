@@ -13,3 +13,22 @@
 * ```show dbs``` -> This command will show the names of all created databases. By default, MongoDB comes with 3 databases: "admin", "config" and "local".
 * ```use <db_name>``` -> This command will create a new database and then switch to it. The created database will only appear on the ```show dbs``` output if it, actually, has data stored inside it.
 * ```db``` -> This command will show the name of the current database that you are working with.
+
+## Useful comparison between MongoDB and SQL
+* __Collections in MongoDB are equivalent to Tables in SQL.__
+* __Documents in MongoDB are equivalent to Rows in SQL.__
+* In MongoDB, each document represent a single data record.
+
+## Create Operations
+* There are 2 types of Create operations in MongoDB:
+* ```db.name_of_collection.insertOne()``` -> This method will insert only one record inside a collection of a database. The argument that is passed is a JavaScript object that works like a document that will be inserted. Take a look at the example below:
+```javascript
+db.users.insertOne(
+  {
+    name: "Sue",
+    age: 26,
+    status: "pending"
+  }
+)
+```
+* ```db.name_of_collection.insertMany()``` -> This method will insert multipe records inside a collection of a database. The argument that is passed is a    . Take a look at the example below:
