@@ -86,3 +86,7 @@ db.products.insertOne({
   productsOrdered: [1, 2]
 }
 ```
+
+## Connecting MongoDB to an Application
+* To do this, you can use either a package called __Mongoose__ or __MongoDB Node.js Native Driver.__
+* __The preferred option is Mongoose.__
