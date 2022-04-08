@@ -79,3 +79,10 @@ db.products.insertOne({
   ]
 })
 ```
+* __IMPORTANT: There is another way of expressing relationships in MongoDB that is much similar to the way that SQL uses: The use of references. We can use the ```_id``` field of documents to express relationships between documents that belong to different collections. Take a look at the example below in which we have two different types of products inside the ```products``` collection and we also have an ```order``` document that contains a field to describe which products were ordered:__
+```javascript
+{
+  orderNumber: 234456,
+  productsOrdered: [1, 2]
+}
+```
