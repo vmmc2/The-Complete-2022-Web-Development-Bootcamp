@@ -1,5 +1,5 @@
 # The-Complete-2022-Web-Development-Bootcamp
-My codes and notes for this course
+My codes, mini-projects and notes for this course.
 
 ### Principles of Code Refactoring
 1) Readability
