@@ -46,4 +46,21 @@ const fruitSchema = new mongoose.Schema({
 ```
 * __For more info about the data types that a Schema can accept, take a look at the mongoose documentation.__
 #### 2) Creating a Model
+* A model has the responsability of creating a collection (table) and assigning a name to it, so we can access its documents later on. It also establishes the connection between the created collection (table) and the database.
+* We must always provide the name of the table in singular. Mongoose is smart enough to pluralize it.
+* Take a look at the example below in which we create a new model for our fruit schema:
+```javascript
+const Fruit = mongoose.model("Fruit", fruitSchema);
+```
+#### 3) Creating a document
+* Now we create a document that obeys the structure defined inside the schema. 
+* __The document is just an instance of the model. Therefore, it must have the same type as the model.__
+```javascript
+const fruit = new Fruit({
+  name: "Apple",
+  rating: 8,
+  review: "Pretty solid as a fruit."
+});
 
+fruit.save();
+```
