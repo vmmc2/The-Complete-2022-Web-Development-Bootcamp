@@ -27,3 +27,23 @@ mongoose.connect("mongodb://localhost:27017/fruitsDB");
 ```javascript
 mongoose.connect("mongodb://localhost:27017/fruitsDB", { useNewUrlParser: true});
 ```
+
+## Creating a Schema, a Model and a Document
+* The process needed to save a particular document inside a database is the following:
+  1. __Create the schema related to the document.__
+  2. __Create the model related to the document.__
+  3. __Create the document and then save it inside the database.__
+* Let's take a look at each step of the mentioned process...
+#### 1) Creating a Schema
+* A Schema just describes the structure that a certain type of document must have in order to be saved to a database. 
+* It works like a blueprint that must be followed.
+```javascript
+const fruitSchema = new mongoose.Schema({
+  name: String,
+  rating: Number,
+  review: String
+});
+```
+* __For more info about the data types that a Schema can accept, take a look at the mongoose documentation.__
+#### 2) Creating a Model
+
