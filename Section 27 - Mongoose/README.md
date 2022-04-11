@@ -80,3 +80,29 @@ const person = new Person({
 
 person.save();
 ```
+#### Saving multiple documents inside a collection in Mongoose
+* Mongoose provides a simple way of saving multiple documents at once inside a specific collection.
+* To do so, all you have to do is use the method __```ModelName.insertMany([list_of_documents], callback);```__
+* The callback is used to log errors if any occur.
+* Take a look at the example below:
+```javascript
+const orange = new Fruit({
+  name: "Orange",
+  rating: 5,
+  review: "Not so good!"
+});
+
+const banana = new Fruit({
+  name: "Banana",
+  rating: 10,
+  review: "Banana is the best fruit!"
+});
+
+Fruit.insertMany([orange, banana], function(err){
+  if(err){
+    console.log(err);
+  }else{
+    console.log("Everything went fine while saving the documents to the collection.");
+  }
+});
+```
