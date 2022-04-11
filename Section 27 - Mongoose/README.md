@@ -77,4 +77,6 @@ const person = new Person({
   name: "Joe",
   age: 37
 });
+
+person.save();
 ```
