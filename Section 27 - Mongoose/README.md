@@ -4,6 +4,9 @@
 * Mongoose is a JavaScript package that works as an ODM (Object-Document Mapper). It'll allow your JS app to speak with your DB.
 * It makes the process of developing with a database much easier and faster.
 
+## IMPORTANT NOTE
+* __Most of the methods presented here that interact with the data stored inside the database are methods related to the Mongoose Model class.__
+
 ## Deleting a database
 * In order to delete a specific database through the Mongo shell, you have to do the following:
   1. Inside the Mongo shell, switch to the database that you want to delete using the command ```use <database_name>```.
@@ -148,5 +151,45 @@ const fruitSchema = new mongoose.Schema({
 ```
 
 ## Updating and Deleting data in Mongoose
+* Again, I highly recommend that you take a look at the Mongoose documentation in order to understand better how things work in this framework. Specifically, take a look inside the API section.
+* There are three different methods in Mongoose that can be used to update the documents of a collection. These methods are:
+  * ```Model.update()```
+  * ```Model.updateMany()```
+  * ```Model.updateOne()```
+* In the same way as we've seen above, in Mongoose there are two different methods that can be used to delete documents from a collection. Such methods are:
+  * ```Model.deleteMany()```
+  * ```Model.deleteOne()```
 
 ## Establishing Relationships and embedding documents in Mongoose
+* The idea of establishing relationships and embedding documents in Mongoose is better explained with an example:
+* __Let's say that we have two types of documents: one document represents a Person and another one represents a Fruit. Let's say that each person inside our ```people``` collection has a favorite fruit. How we would store this information? The answer is: by embedding a fruit document inside a person document. You'll find below a series of steps that must be followed in order to achieve this.__
+```javascript
+// We create the schema that refers to a Fruit. Then we must create the model that refers to a Fruit.
+
+// Then, you must make a change to the Schema that represents a Person:
+const personSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  favoriteFruit: fruitSchema
+});
+
+// Next step is to create the model that refers to a Person...
+
+// Finally, you create a document of type Fruit. Then a document of type Person and in the field "favoriteFruit" you put the name of the fruit document that you have created.
+
+const pineapple = new Fruit({
+  name: "Pineapple",
+  rating: 10,
+  review: "So good!"
+});
+
+pineapple.save();
+
+const person = new Person({
+  name: "Amy",
+  age: 23,
+  favoriteFruit: pineapple;
+});
+
+person.save();
+```
