@@ -64,3 +64,17 @@ const fruit = new Fruit({
 
 fruit.save();
 ```
+#### Challenge
+```javascript
+const personSchema = new mongoose.Schema({
+  name: String,
+  age: Number
+});
+
+const Person = mongoose.model("Person", personSchema);
+
+const person = new Person({
+  name: "Joe",
+  age: 37
+});
+```
