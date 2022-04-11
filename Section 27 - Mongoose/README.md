@@ -112,7 +112,7 @@ Fruit.insertMany([orange, banana], function(err){
 * This is done via the find method. __This method has the following syntax: ```ModelName.find()```__
 * This method can be called with two parameters: one parameter that works as a filter and another one that is a callback function __(Remember that callbacks are just functions that are triggered/called when the execution of a specific function is finished).__
 * In the example below we have:
-  * The method ```find()``` with only one parameter: The callback function, which has two parameters. The first parameter is the ```err``` parameter which receives possible errors that might have happened during the process of finding specific documents inside a collection. The second parameter is the ```fruits``` parameter which receives all documents found by the call to the ```find()``` method. Note that, in this scenario, we did not pass any filters as a parameter to the find function, so the call to this method will return every single document inside the ```fruits```collection.
+  * The method ```find()``` with only one parameter: The callback function, which has two parameters. The first parameter is the ```err``` parameter which receives possible errors that might have happened during the process of finding specific documents inside a collection. The second parameter is the ```fruits``` parameter which receives all documents found by the call to the ```find()``` method. Note that, in this scenario, we did not pass any filters as a parameter to the find function, so the call to this method will return every single document inside the ```fruits``` collection.
 ```javascript
 Fruit.find(function(err, fruits){
   if(err){
@@ -122,3 +122,31 @@ Fruit.find(function(err, fruits){
   }
 });
 ```
+* __As a result, if everthing goes fine, the ```fruits``` object will just be an array of JavaScript objects (Fruit objects) that we can manipulate as we please inside our application.__
+* __IMPORTANT: It's a good practice to close the connection between the application and its database once you've performed all the operations that you wanted to. This can be done by the following line of code:__
+```javascript
+mongoose.connection.close();
+```
+
+## Data Validation in Mongoose
+* Mongoose provides a simple way of validating the data that we are trying to store (as a document) inside a collection of the database. 
+* __This can be done by the use of Mongoose validators. It's important to mention that validators must be applied inside the schema. More documentations about validators can be found on the Mongoose website.__
+* Take a look at the example below that shows how to use a simple validator:
+```javascript
+const fruitSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    requred: [true, "Name of the fruit was not specified!"]
+  },
+  rating: {
+    type: Number,
+    min: 1,
+    max: 10
+  },
+  review: String
+});
+```
+
+## Updating and Deleting data in Mongoose
+
+## Establishing Relationships and embedding documents in Mongoose
