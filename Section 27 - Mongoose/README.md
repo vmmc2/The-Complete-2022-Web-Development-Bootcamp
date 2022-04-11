@@ -106,3 +106,19 @@ Fruit.insertMany([orange, banana], function(err){
   }
 });
 ```
+
+## Reading from your database in Mongoose
+* Mongoose also provides a simple way of find specific documents of a collection.
+* This is done via the find method. __This method has the following syntax: ```ModelName.find()```__
+* This method can be called with two parameters: one parameter that works as a filter and another one that is a callback function __(Remember that callbacks are just functions that are triggered/called when the execution of a specific function is finished).__
+* In the example below we have:
+  * The method ```find()``` with only one parameter: The callback function, which has two parameters. The first parameter is the ```err``` parameter which receives possible errors that might have happened during the process of finding specific documents inside a collection. The second parameter is the ```fruits``` parameter which receives all documents found by the call to the ```find()``` method. Note that, in this scenario, we did not pass any filters as a parameter to the find function, so the call to this method will return every single document inside the ```fruits```collection.
+```javascript
+Fruit.find(function(err, fruits){
+  if(err){
+    console.log(err);
+  }else{
+    console.log(fruits);
+  }
+});
+```
