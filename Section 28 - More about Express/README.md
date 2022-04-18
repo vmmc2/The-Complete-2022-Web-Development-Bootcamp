@@ -46,6 +46,7 @@
                   });
       
                   list.save();
+                  res.redirect("/" + customListName);
               }else{
                   // No need to create a new list. We must show the existing one.
                   
