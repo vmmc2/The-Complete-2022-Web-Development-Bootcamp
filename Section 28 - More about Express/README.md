@@ -11,10 +11,48 @@
   * ```localhost:3000/Work```
 * __How can we do that using dynamic routing in Express.js?__
   * We can do that by using __parameters__ inside the routes of our application.
-  * Here's the following way of how we could do that:
+  * Here's the following way (the template) of how we could do that:
   ```javascript
-  app.get("/category/:<parameter_name>", function(req,res){
+  app.get("/category/:<parameter_name>", function(req, res){
       // Access req.params.parameter_name
+  });
+  ```
+  * A more concrete example (applied to our scenario) would be:
+  ```javascript
+  app.get("/:customListName", function(req, res){
+      const customListName = req.params.customListName; // O valor disso vai ser o nome que eu digitar no lugar de ":customListName"
+      
+      const list = new List({
+          name: customListName,
+          items: defaultListItems
+      });
+      
+      list.save();
+      
+  });
+  ```
+  * But we must keep one thing in mind. The code as it is will keep creating new lists with default list items even if a list has already been created. So, in order to correct this, we must try to find if a list has already been created and, if that is the case, then we will use the already created list instead of creating another one.
+  ```javascript
+  app.get("/:customListName", function(req, res){
+      const customListName = req.params.customListName; // O valor disso vai ser o nome que eu digitar no lugar de ":customListName"
+      
+      List.findOne({name: customListName}, function(err, foundList){
+          if(!err){
+              if(!foundList){
+                  // We need to create a new list.
+                  const list = new List({
+                    name: customListName,
+                    items: defaultListItems
+                  });
+      
+                  list.save();
+              }else{
+                  // No need to create a new list. We must show the existing one.
+                  
+                  res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
+              }
+          }
+      });
   });
   ```
 
