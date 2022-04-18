@@ -9,3 +9,12 @@
   * ```localhost:3000/House```
   * ```localhost:3000/University```
   * ```localhost:3000/Work```
+* __How can we do that using dynamic routing in Express.js?__
+  * We can do that by using __parameters__ inside the routes of our application.
+  * Here's the following way of how we could do that:
+  * ```javascript
+  app.get("/category/:<parameter_name>", function(req,res){
+      // Access req.params.parameter_name
+  });
+  ```
+
