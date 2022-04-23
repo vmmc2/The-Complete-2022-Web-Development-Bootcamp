@@ -57,3 +57,14 @@
   });
   ```
 
+## Navigating through our app routes by using Anchor tags ```<a></a>```
+* __You don't need to always use the ```<form></form>``` tag in order to go to another route. You can use a simple ```<a></a>``` tag.__
+* __Let's say that in your application you have three routes: the root route ("/"), the about route ("/about") and the contact-us route ("/contact"). In order to navigate through these three routes using ```<a></a>``` tags, all you have to do is refer to these routes inside the ```href``` attribute:__
+```HTML
+<ul class="nav navbar-nav navbar-right">
+    <!-- 6 -->
+     <li id="home"><a href="/">HOME</a></li>
+     <li id="about"><a href="/about">ABOUT US</a></li>
+     <li id="contact"><a href="/contact">CONTACT US</a></li>
+</ul>
+```
