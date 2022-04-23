@@ -56,6 +56,7 @@
       });
   });
   ```
+* __IMPORTANT: A very useful framework to deal with dynamic routing is one called "Lodash".__
 
 ## Navigating through our app routes by using Anchor tags ```<a></a>```
 * __You don't need to always use the ```<form></form>``` tag in order to go to another route. You can use a simple ```<a></a>``` tag.__
