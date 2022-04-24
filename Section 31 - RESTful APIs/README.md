@@ -24,10 +24,41 @@
 * Now we will do a comparison to see how the HTTP request verbs work with the most common database operations.
 
 ### GET
-* The HTTP __GET__ request verb works in the same way as the __Read__ database operation.__
+* The HTTP __GET__ request verb works in the same way as the __Read__ database operation.
 * Take a look at the code snippet below. There, we make a GET request, which is expected to return something (a webpage, data, anything). In this type of request, we usually make a query to our database in order to retrieve some data.
 ```javascript
 app.get("/", function(req, res){
     // Make some query to the database in order to return data as a response to the Client-side.
+});
+```
+
+### POST
+* The HTTP __POST__ request verb works in the same way as the __Create__ database operation.
+* Take a look at the code snippet below. There, we make a POST request, which is expected to interact with our database in such a way that it will simply create a new entry inside our database.
+```javascript
+app.post("/", function(req, res){
+    // The "req" parameter contains some data that we want to save.
+    // The "res" parameter will only save the requested data inside our database.
+});
+```
+
+### PUT/PATCH
+* The HTTP __PUT or PATCH__ request verbs work in the same way as the __Update__ database operation.
+* But what's the difference between __PUT__ and __PATCH__ ?
+  * __PUT__ -> You send a completely new entry to replace the previous one inside the database.
+  * __PATCH__ -> You only send the piece of data needs to be updated inside the database.
+* The code snippet below show how to use this HTTP request verb in JavaScript.
+```javascript
+app.put("/", function(req, res){
+    
+});
+```
+
+### DELETE
+* The HTTP __DELETE__ request verbs work in the same way as the __Delete__ database operation.
+* The code snippet below show how to use this HTTP request verb in JavaScript.
+```javascript
+app.delete("/", function(req, res){
+    
 });
 ```
