@@ -62,3 +62,6 @@ app.delete("/", function(req, res){
     
 });
 ```
+
+## The format of RESTful APIs
+![[restful_api_table]](RESTful API Explanation Table.png)
