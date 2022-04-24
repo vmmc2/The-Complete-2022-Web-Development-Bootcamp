@@ -17,3 +17,17 @@
 * As you might imagine, there is a big set of rules that must be followed in order to make your API RESTful. The set is very big and we won't focus on every rule. Instead, we will focus on the two major rules, which are:
   * __Use HTTP request verbs.__
   * __Use specific pattern of routes/endpoints URLs.__
+
+## The HTTP request verbs
+* The most common HTTP request verbs that you will be using are: __GET, POST, PUT, PATCH, DELETE.__
+* One must keep in mind that the HTTP request verbs have similarities with the most common database operations that we've seen previously (CRUD): __Create, Read, Update, Delete.__
+* Now we will do a comparison to see how the HTTP request verbs work with the most common database operations.
+
+### GET
+* The HTTP __GET__ request verb works in the same way as the __Read__ database operation.__
+* Take a look at the code snippet below. There, we make a GET request, which is expected to return something (a webpage, data, anything). In this type of request, we usually make a query to our database in order to retrieve some data.
+```javascript
+app.get("/", function(req, res){
+    // Make some query to the database in order to return data as a response to the Client-side.
+});
+```
