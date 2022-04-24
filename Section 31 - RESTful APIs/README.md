@@ -64,4 +64,16 @@ app.delete("/", function(req, res){
 ```
 
 ## The format of RESTful APIs
-![[restful_api_table]](RESTful API Explanation Table.png)
++------------+--------------------------+-----------------------------------+
+| HTTP Verbs |         /articles        |        /articles/jack-bauer       |
++------------+--------------------------+-----------------------------------+
+|     GET    | Fetches all the articles | Fetches the article on jack-bauer |
++------------+--------------------------+-----------------------------------+
+|    POST    |  Creates one new article |                 -                 |
++------------+--------------------------+-----------------------------------+
+|     PUT    |             -            | Updates the article on jack-bauer |
++------------+--------------------------+-----------------------------------+
+|    PATCH   |             -            | Updates the article on jack-bauer |
++------------+--------------------------+-----------------------------------+
+|   DELETE   |  Delete all the articles | Deletes the article on jack-bauer |
++------------+--------------------------+-----------------------------------+
