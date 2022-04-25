@@ -66,3 +66,9 @@ app.delete("/", function(req, res){
 ## Things that are important to review and consult when dealing with RESTful APIs
 * __Learn more about Express.js by reading its documentation.__
 * __Review the URL encoding and decoding style.__
+
+## Another important difference about how PUT and PATCH work
+* As we've seen previously, when we want to make an update to a specific resource inside the database we can use two different types of HTTP request verbs. These two verbs are: __PUT__ and __PATCH__.
+* __PUT__ -> It will completely replace the previous resource by a new one. And, by doing so, it will replace all of its fields.
+* __PATCH__ -> It won't completely replace the previous resource by a new one. It will only replace the fields that we want to be replaced.
+* This behaviour translates to Mongoose by the use of the ```<ModelName>.updateOne();``` method. This method has a specific parameter called ```overwrite``` which can be set to ```true``` or ```false```. If its value is ```true```, then it will work as a __PUT__ request. Otherwise, it will work as a __PATCH__ request.
