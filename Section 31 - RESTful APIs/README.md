@@ -62,3 +62,7 @@ app.delete("/", function(req, res){
     
 });
 ```
+
+## Things that are important to review and consult when dealing with RESTful APIs
+* __Learn more about Express.js by reading its documentation.__
+* __Review the URL encoding and decoding style.__
