@@ -45,12 +45,20 @@ DB_PASS=s1mpl3
 console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
 ```
 * __IMPORTANT: DO NOT FORGET TO PUT YOUR ```.env``` FILE INSIDE YOUR ```.gitignore``` FILE. There are several templates for Node.js in GitHub.__
+* __Heroku has its own way of storing environment variables which involves the use of a dashboard to do so.__
 
 ## Level 3 - Hashing Passwords
 
 ## Level 4 - Salting and Hashing Passwords with bcrypt
 
 ## Intermission 2 - Cookies and Sessions
+* Cookies are just a tool used by companies to save information about users that visit their website and take some type of actions inside it.
+* It's more easy to explain what cookies are and how they work by using an example:
+  * Let's say you want to buy a Nintendo Switch at Amazon. The first thing you do in order to buy the console is visit their website. So, at this moment, you send a __GET__ request to the Amazon website.
+  * Their server responds to your request by sending the HTML, CSS and JS files that must be rendered inside your browser. After navigating inside this website, you decide to finally buy the Switch. You put it in your cart (This is equivalent of doing a __POST__ request). Then, the Amazon server responds to this request and also sends a cookie (which will store information about this user's session: In this case, the Amazon server wants to store/remember the fact that the user put a Switch inside the cart). Let's say that, for some reason, you don't finish your purchase and leaves Amazon's website. 
+  * Let's say that on next day, I go again to the Amazon website. However, this time, I will not only send a __GET__ request but also send the cookie that is in my browser. When both of them arrive at the Amazon server, the server will analyze the cookie for previous user sessions inside it.
+  * __There are different types of cookies. On this module we are going to study cookies that store sessions information. A session is just a period of time in which a browser interacts with a server.__
+  * The package that we are going to use to implement this type of functionality is called: __Passport.js__.
 
 ## Level 5 - Passport.js
 
