@@ -33,6 +33,18 @@
 ```javascript
 require("dotenv").config();
 ```
+* The first thing you need to do in order to use environment variables is create a new file called ```.env``` in the root directory/folder of your project.
+* Then, add environment-specific variables on new lines in the form of ```NAME=VALUE``` (The name of the variable must be in uppercase and follow snake_case convention):
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=s1mpl3
+```
+* After defining the environment variables, you can refer to them inside your JS code by using the following convention:
+```javascript
+console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
+```
+* __IMPORTANT: DO NOT FORGET TO PUT YOUR ```.env``` FILE INSIDE YOUR ```.gitignore``` FILE. There are several templates for Node.js in GitHub.__
 
 ## Level 3 - Hashing Passwords
 
