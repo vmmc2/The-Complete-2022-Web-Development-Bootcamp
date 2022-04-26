@@ -24,3 +24,22 @@
   userSchema.plugin(secret, encryptedFields: ["password"]);
   ```
   * __And that's it. The ```mongoose-encryption``` package works in such way that it encrypts the required fields of a document when we save it and it decrypts its content when we are trying to find a specific document.__
+
+## Intermission 1 - Environment Variables in order to keep Secrets safe
+* __Environment Variables are just a safe way of storing sensitive information. Usually, these environment variables are stored inside a specific file.__
+* In order to do so, we can use a package called __```dotenv```.__
+* First of all, you must install this package through npm: ```npm install dotenv```.
+* After doing so, you must require and configure this package as soon as possible inside your project by writing the following line of code at the very top of your ```app.js``` or ```index.js``` file:
+```javascript
+require("dotenv").config();
+```
+
+## Level 3 - Hashing Passwords
+
+## Level 4 - Salting and Hashing Passwords with bcrypt
+
+## Intermission 2 - Cookies and Sessions
+
+## Level 5 - Passport.js
+
+## Level 6 - OAuth 2.0
