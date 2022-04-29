@@ -56,6 +56,12 @@ console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
 * __In order to deal with this new level of security, we must use a new JS package called md5. This package can be installed through the command line by the following command: ```npm install md5```.__
 
 ## Level 4 - Salting and Hashing Passwords with bcrypt
+* Salting is just Hashing taken to the next level.
+* As we've seen previously, the process of hashing consists of just applying a Hashing function to an original string in order to generate a Hash.
+* __Salting works different because it also adds a random set of characters (called Salt) to the original string before applying the Hashing function. This results in a much more secure system.__
+* __The user doesn't need to remember the Salt. It's also worth mentioning that the Salt is stored inside the database along with the Hash.__
+* We can also make our system more secure by using a more complex Hashing algorithm. As an example, the bcrypt hashing algorithm is more complex than the md5 hashing algorithm.
+* Another important concept that comes into play in this scenario is the concept of Salt rounds. The whole idea behind it basically consists repeating the process of appending salts to a string and then applying a Hashing function to it.
 
 ## Intermission 2 - Cookies and Sessions
 * Cookies are just a tool used by companies to save information about users that visit their website and take some type of actions inside it.
