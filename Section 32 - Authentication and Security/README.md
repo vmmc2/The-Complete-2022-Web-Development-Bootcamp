@@ -48,6 +48,12 @@ console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
 * __Heroku has its own way of storing environment variables which involves the use of a dashboard to do so.__
 
 ## Level 3 - Hashing Passwords
+* The idea behind Hashing is more complex (and also more secure) than the idea behind encryption/decryption.
+* __The whole problem with encryption and decryption is that, even though one can generate a very complex encryption/decryption system, such system will be dependent of a key, that is used to retrieve the original content from a encrypted messsage.__
+* __This means that a hacker, with enough free time, might be able to discover the key and then compromise our whole system.__
+* __But how Hashing solve this problem? The process of Hashing consists of applying a Hashing function to the original message. Through this process, we obtain a hash as a result. But you might ask yourself "How do we get the original content back?" and I answer you "That's the neat part. You don't". Hashing functions are one-way only. This means that we can take an original message and get its hash but not the other way around.__
+* __In order to check if a user entered the correct password, we do not check the original content of the password. We chech the obtained hashes from the Hashing of the password.__
+* __In order to deal with this new level of security, we must use a new JS package called md5. This package can be installed through the command line by the following command: ```npm install md5```.__
 
 ## Level 4 - Salting and Hashing Passwords with bcrypt
 
