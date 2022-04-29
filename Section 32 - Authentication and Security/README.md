@@ -61,7 +61,9 @@ console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
 * __Salting works different because it also adds a random set of characters (called Salt) to the original string before applying the Hashing function. This results in a much more secure system.__
 * __The user doesn't need to remember the Salt. It's also worth mentioning that the Salt is stored inside the database along with the Hash.__
 * We can also make our system more secure by using a more complex Hashing algorithm. As an example, the bcrypt hashing algorithm is more complex than the md5 hashing algorithm.
-* Another important concept that comes into play in this scenario is the concept of Salt rounds. The whole idea behind it basically consists repeating the process of appending salts to a string and then applying a Hashing function to it.
+* __Another important concept that comes into play in this scenario is the concept of Salt rounds. The whole idea behind it basically consists repeating the process of appending salts to a string and then applying a Hashing function to it.__
+* In order to deal with this new level of security, we must use a new JS package called __bcrypt.__
+* You can install bcrypt through the command line by simply running the following comamnd: ```npm install bcrypt```.
 
 ## Intermission 2 - Cookies and Sessions
 * Cookies are just a tool used by companies to save information about users that visit their website and take some type of actions inside it.
