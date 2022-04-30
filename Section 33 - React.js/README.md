@@ -41,5 +41,5 @@ ReactDOM.render(WHAT YOU WANT TO SHOW, WHERE YOU WANT TO SHOW IT, OPTIONAL CALLB
 ```javascript
 ReactDOM.render(<h1> Hello World </h1>, document.getElementById("root"));
 // Basically, this method is going to render the <h1> Hello World </h1> element inside the element that has an id="root".
-// This is done through the use of a JS compiler called "Babel". That translates HTML code to JS code.
+// This is done through the use of a JS compiler called "Babel". That translates HTML code to JS code. Babel translates this to a version of JS code that can be understood by any browser.
 ```
