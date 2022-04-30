@@ -76,6 +76,33 @@ console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
 
 ## Level 5 - Passport.js
 * Now we are going to implement the concept of cookies and sessions by using a few JavaScript packages. Specifically, we are going the following packages: __```passport passport-local passport-local-mongoose express-session```__.
-* 
+* Below, you will find all steps necessary to setup these packages in your project.
+  * First of all, we must require the following packages in the ```app.js``` or ```index.js``` file in this specific order: ```express-session passport passport-local-mongoose```.
+  * The first thing to configure the ```express-session``` package is to add the following lines of code in your ```app.js```:
+  ```javascript
+  app.use(session({
+    secret: "ThisIsOurSecret.", // This must be inside our .env file
+    resave: false,
+    saveUninitialized: false
+  }));
+  ```
+  * Next, you need to configure the ```passport``` package is to add the following lines of code in your ```app.js``` file:
+  ```javascript
+  app.use(passport.initialize());
+  app.use(passport.session());
+  ```
+  * Next, you need to configure the ```passport-local-mongoose``` package is to add the following lines of code in your ```app.js``` file:
+  ```javascript
+  userSchema.plugin(passportLocalMongoose);
+  ```
+  * After doing so, we must configure the ```passport``` package locally in our project. In order to do so, we must add the following code in your ```app.js``` file:
+  ```javascript
+  passport.use(User.createStrategy());
+  passport.serializeUser(User.serializeUser());
+  passport.deserializeUser(User.deserializeUser());
+  ```
+  * The first line of code above is responsible for creating a local strategy responsible for dealing with the user.
+  * The second line of code is responsible for serializing the user (as a cookie). This is responsible for putting the user in a cookie (serializing it).
+  * The third line of code is responsible for deserializing the user (as a cookie). This is responsible for taking the user outside of a cookie (deserializing it).
 
 ## Level 6 - OAuth 2.0
