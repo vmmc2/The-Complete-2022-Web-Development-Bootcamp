@@ -37,3 +37,9 @@ const ReactDOM = require("react-dom");
 ```javascript
 React.render(WHAT YOU WANT TO SHOW, WHERE YOU WANT TO SHOW IT, OPTIONAL CALLBACK);
 ```
+* Below you can find a better example that shows what React.render actually does:
+```javascript
+React.render(<h1> Hello World </h1>, document.getElementById("root"));
+// Basically, this method is going to render the <h1> Hello World </h1> element inside the element that has an id="root".
+// This is done through the use of a JS compiler called "Babel". That translates HTML code to JS code.
+```
