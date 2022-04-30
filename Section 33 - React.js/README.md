@@ -43,3 +43,18 @@ ReactDOM.render(<h1> Hello World </h1>, document.getElementById("root"));
 // Basically, this method is going to render the <h1> Hello World </h1> element inside the element that has an id="root".
 // This is done through the use of a JS compiler called "Babel". That translates HTML code to JS code. Babel translates this to a version of JS code that can be understood by any browser.
 ```
+* __IMPORTANT: It's worth mentioning that the ```ReactDOM.render()``` method can only take one HTML element as the first parameter. However, remember that we can combine different HTML elements to get only one HTML element by using the ```<div></div>``` tag. Take a look at the examples below to understand this idea better:__
+  * This is not a single HTML element:
+  ```javascript
+  ReactDOM.render(<h1> Hello World </h1> <p> This is just a paragraph </p>, document.getElementById("root"));
+  ```
+  * This is a single HTML element (even if it's a complex one):
+  ```javascript
+  ReactDOM.render(
+    <div>
+      <h1> Hello World </h1>
+      <p> This is just a paragraph. </p>
+    </div>,
+    document.getElementById("root")
+  );
+  ```
