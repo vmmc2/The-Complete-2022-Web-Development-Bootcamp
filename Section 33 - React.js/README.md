@@ -35,11 +35,11 @@ const ReactDOM = require("react-dom");
 ```
 * Inside the ```index.js``` file, we have a specific React method that will allow us to render more components inside our app. This method is called ```render``` and it has the following syntax:
 ```javascript
-React.render(WHAT YOU WANT TO SHOW, WHERE YOU WANT TO SHOW IT, OPTIONAL CALLBACK);
+ReactDOM.render(WHAT YOU WANT TO SHOW, WHERE YOU WANT TO SHOW IT, OPTIONAL CALLBACK);
 ```
 * Below you can find a better example that shows what React.render actually does:
 ```javascript
-React.render(<h1> Hello World </h1>, document.getElementById("root"));
+ReactDOM.render(<h1> Hello World </h1>, document.getElementById("root"));
 // Basically, this method is going to render the <h1> Hello World </h1> element inside the element that has an id="root".
 // This is done through the use of a JS compiler called "Babel". That translates HTML code to JS code.
 ```
