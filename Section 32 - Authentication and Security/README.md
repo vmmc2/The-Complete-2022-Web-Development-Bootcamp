@@ -75,5 +75,7 @@ console.log(process.env.ENVIRONEMNT_VARIABLE_NAME);
   * The package that we are going to use to implement this type of functionality is called: __Passport.js__.
 
 ## Level 5 - Passport.js
+* Now we are going to implement the concept of cookies and sessions by using a few JavaScript packages. Specifically, we are going the following packages: __```passport passport-local passport-local-mongoose express-session```__.
+* 
 
 ## Level 6 - OAuth 2.0
