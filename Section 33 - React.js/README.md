@@ -92,10 +92,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const styling = {
-  color: "red"; //The value must be of type String.
+  color: "red" //The value must be of type String and the keys must be in camelCase.
 };
 
 ReactDOM.render(
-  <h1 style={styling}> Hello World! </h1>
+  <h1 style={styling}> Hello World! </h1>,
+  document.getElementById("root")
 );
 ```
