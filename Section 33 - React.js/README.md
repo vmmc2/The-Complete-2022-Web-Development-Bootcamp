@@ -100,3 +100,28 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
+## React Components
+* React components is a React feature that allows us to structure our code in a more organized way. Moreover, it also allows us to reuse code blocks.
+* __In order to create a simple React component you need to create a function and make this function return a HTML element. It's important to mention that you need to name your function using a variation of camelCase (all words must be capitalized). After creating this function and making it return a HTML element, all you need to is reference this function inside your HTML file.__
+* __Take a look at the example below in order to better understand this concept.__
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Heading(){
+ return <h1> My favourite foods </h1>;
+}
+
+ReactDOM.render(
+ <div>
+  <Heading></Heading>
+  <ul>
+   <li> Pizza </li>
+   <li> Quesadilla </li>
+   <li> Cookies </li>
+  </ul>
+ </div>,
+ document.getElementById("root");
+);
+```
