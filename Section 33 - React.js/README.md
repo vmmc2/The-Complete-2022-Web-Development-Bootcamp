@@ -58,3 +58,15 @@ ReactDOM.render(<h1> Hello World </h1>, document.getElementById("root"));
     document.getElementById("root")
   );
   ```
+
+## JavaScript Expressions in JSX and ES6 Template Literals
+* If you create JS variables (by using ```const```, ```let```, ```var```) and want to put the value of these variables inside the HTML file (changed by the ```ReactDOM.render()``` method), all you need to do is to enclose the variable with {}. 
+* You can see an example below:
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+const myName = "Victor";
+
+ReactDOM.render(<h1> Hello there, {myName}! </h1>, document.getElementById("root"));
+```
