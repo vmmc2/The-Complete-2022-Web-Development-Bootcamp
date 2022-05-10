@@ -71,3 +71,31 @@ const myName = "Victor";
 
 ReactDOM.render(<h1> Hello there, {myName}! </h1>, document.getElementById("root"));
 ```
+
+## Observation
+* When dealing with React, you must change the type of your script from ```text/javascript``` to ```text/JSX```.
+
+## JSX Attributes and Styling React Elements
+* As we have done previously with pure HTML and CSS, we can also style our HTML elements using React.
+* We can put our CSS styles inside some classes or ids in the ```styles.css``` and the reference those classes and ids in the HTML file. However, when dealing with classes in React, we must use a different attribute called ```className``` instead of the attribute ```class```.
+* Furthermore, when dealing with React, every attribute name must use __camelCase.__
+* Just because we are learning a new technology (namely React) it does not mean that the things that we've learned previously are not valid anymore. 
+* __When it comes to styling in React, the best practice to do so is to use the ```className``` attribute and create different styles inside the ```styles.css``` file.__
+
+## Inline Styling for React Elements
+* There's also another way of styling your React elements. However, it's important to mention that this is not the recommended way according to the React documentation.
+* In this way, we put the styling directly inside the HTML file. To be more specific, we put the styling inside the ```style``` tag of any HTML element.
+* There are some differences that you must keep in mind when doing so. JSX requires that the value of the ```style``` attribute must be a JS object and not a string (as we could think since we've done this way when dealing with pure HTML).
+* The example below shows how to properly use inline styling for React elements:
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+const styling = {
+  color: "red"; //The value must be of type String.
+};
+
+ReactDOM.render(
+  <h1 style={styling}> Hello World! </h1>
+);
+```
