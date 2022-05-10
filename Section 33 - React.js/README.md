@@ -143,7 +143,7 @@ export default Heading;
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
-import Heading from "./Heading.jsx" // Could be just "./Heading"
+import Heading from "./Heading.jsx"; // Could be just "./Heading"
 
 ReactDOM.render(
   <div>
