@@ -125,3 +125,30 @@ ReactDOM.render(
  document.getElementById("root")
 );
 ```
+* However, we can structure our code better. In order to do so, we must create individual files for each React component that we create. 
+* __Following the React/JSX convention, the name of the file must be equal to the name of the function. Furthermore, the extension of such file must be ```.jsx```.__
+* __It's also worth mentioning that such files are usually created in the same folder as the initial JS file (```index.js```).__
+* __Applying these concepts in the example below, we would have two files in the same folder: ```index.js``` and ```Heading.jsx```.__
+* __```Heading.jsx```__
+```javascript
+import React from "react";
+
+function Heading(){
+  return <h1> My Favourite Foods </h1>;
+}
+
+export default Heading;
+```
+* __```index.js```__
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Heading.jsx" // Could be just "./Heading"
+
+ReactDOM.render(
+  <div>
+    <Heading></Heading>
+  </div>
+  document.getElementById("root")
+);
+```
