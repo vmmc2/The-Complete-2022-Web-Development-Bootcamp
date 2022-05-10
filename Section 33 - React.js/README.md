@@ -122,6 +122,6 @@ ReactDOM.render(
    <li> Cookies </li>
   </ul>
  </div>,
- document.getElementById("root");
+ document.getElementById("root")
 );
 ```
