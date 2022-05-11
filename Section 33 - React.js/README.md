@@ -152,3 +152,23 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
+## JavaScript ES6 - Import, Export and Modules
+* __A module is just a separate file that contains some piece of code that can be used elsewhere inside a project. Usually, we create a file and export its content so other files can import this created file and then use its content.__
+#### Importing/Exporting just one piece of code from the module (file)
+* As an example, let's say that we create a module (file) that contains only one piece of code (could be a variable/constant or a fuction):
+* __```math.js```__:
+```javascript
+const pi = 3.14159;
+
+export default pi;
+```
+* Now let's suppose that we want to use this module inside another file that is inside the same folder of ```math.js```.
+* __```index.js```__:
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import pi from "./math.js"; // We could use any other name instead of "pi". The chosen name would refer to the constant "pi" defined inside the math.js file/module.
+
+...
+```
