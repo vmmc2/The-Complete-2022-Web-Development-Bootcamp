@@ -204,3 +204,35 @@ ReactDOM.render(
  document.getElementById("root")
 );
 ```
+### Importing/Exporting everything from the module (file)
+* What we must do in order to import everything (every piece of code) from the module (file)?
+* __```math.js```__:
+```javascript
+const pi = 3.14159;
+
+function doublePi(){
+ return 2 * pi;
+}
+
+function triplePi(){
+ return 3 * pi;
+}
+
+export default pi;
+export {doublePi, triplePi};
+```
+* __```index.js```__:
+* ```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import * as math from "./math.js"; // We could use any other name instead of "math".
+
+ReactDOM.render(
+ <ul>
+  <li> {math.default} </li>
+  <li> {math.doublePi()} </li>
+  <li> {math.triplePi()} </li>
+ </ul>
+ document.getElementById("root")
+);
+```
