@@ -222,7 +222,7 @@ export default pi;
 export {doublePi, triplePi};
 ```
 * __```index.js```__:
-* ```javascript
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import * as math from "./math.js"; // We could use any other name instead of "math".
@@ -233,6 +233,41 @@ ReactDOM.render(
   <li> {math.doublePi()} </li>
   <li> {math.triplePi()} </li>
  </ul>
+ document.getElementById("root")
+);
+```
+
+## React Props
+* This is also called __React Properties.__
+* __This is a feature provided by the React framework that allows us, developers, to reuse components.__
+* To be more specific, let's say that you have created a component named Card that has info about dogs. Each Card should represent a different dog and, thus, every single one of them should display unique info. With the knowledge that we have right now, doing so will be pretty repetitive. In these types of scenario, React props comes to our rescue.
+* __React props allows us to pass some parameters (in the form of a JS object) that will be used inside the component. You can think of this as the same as creating an object of a class.__
+* The code snippet shown below will make things more clear:
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Card(props){ // The parameter props is a JS object that will contain different attributes whose values will be used by the component.
+ return (
+  <div>
+   <h2> {props.name} </h2>
+   <img src={props.img} alt="avatar_img" />
+   <p> {props.tel} </p>
+   <p> {props.email} </p>
+  </div>
+ );
+}
+
+ReactDOM.render(
+ <div>
+  <h1> My contacts </h1>
+  <Card
+   name="Victor"
+   img="https://www.umaurlqualquer.com"
+   tel="4002-8922"
+   email="test123@email.com"
+  />
+ </div>,
  document.getElementById("root")
 );
 ```
