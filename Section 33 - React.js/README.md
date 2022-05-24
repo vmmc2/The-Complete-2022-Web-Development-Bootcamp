@@ -339,3 +339,40 @@ function isEven(number){
 
 const evenNumbers = numbers.filter(isEven); // [2,4];
 ```
+#### Reduce
+* __This method accumulates a value by executing some action/transformation to each item inside the given array.__
+* __This method also returns a new array.__
+* __This method receives an anonymous function that must have two parameters: The first parameter is a variable that is going to be used as the accumulator. The second parameter is the current element inside the array to which we can perform some transformation.__
+```javascript
+const numbers = [1,2,3,4,5];
+
+const sumOfNumbers = numbers.reduce(function(accumulator, currentNumber){
+ return accumulator + currentNumber;
+});
+
+// sumOfNumbers = 15;
+```
+#### Find
+* __This method is responsible for finding (and returning) the first item that matches something inside the given array.__
+* It receives a function as its only parameter. The said function also has only one parameter which is the current element of the array that is being tested in order for us to check whether we have a match or not.
+```javascript
+const numbers = [1,2,3,4,5];
+
+const foundNumber = numbers.find(function(number){
+ return number > 2;
+});
+
+// foundNumber = 3;
+```
+#### FindIndex
+* __This method is responsible for finding (and returning) the index of the first item that matches something inside the given array.__
+* It receives a function as its only parameter. The said function also has only one parameter which is the current element of the array that is being tested in order for us to check whether we have a match or not.
+```javascript
+const numbers = [1,2,3,4,5];
+
+const foundIndex = numbers.findIndex(function(number){
+ return number > 2;
+});
+
+// foundIndex = 2;
+```
