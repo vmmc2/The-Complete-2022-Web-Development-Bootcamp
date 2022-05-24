@@ -308,3 +308,18 @@ function App() {
 export default App;
 ```
 * __IMPORTANT: When dealing with repeated components, the component blueprint must have a field called "key". The value of this field for repeated components must be unique for each component. The "key" field can have a value of type int or type string. This is a property that is not supposed to be used by us, developers. It only serves to be purpose of being used to make repeated React components unique.__
+
+## Useful JS Methods (Map, Filter, Reduce)
+#### Map
+* __As we've seen previously, this method is applied to an array and executes a transformation on each element inside the array and then returns a new array containing these transformed elements.__
+* __The only parameter that this method receives is the name of the function that is going to be executed on each element of the array.__
+* The code snippet below shows how to use this method:
+```javascript
+const numbers = [1,2,3,4,5];
+
+function double(number){
+ return (2*number);
+}
+
+const newNumbers = numbers.map(double); // [2,4,6,8,10];
+```
