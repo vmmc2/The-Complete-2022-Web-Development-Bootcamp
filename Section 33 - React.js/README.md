@@ -3,6 +3,18 @@
 ## Intro
 * To learn React.js, we will use an interactive tool called Code Sandbox.
 
+## How to run a React project?
+* When dealing with React projects made by yourself or by others you must likely will need to run it locally in order to test your code and debug.
+* If you have already installed the required packages, all you need to do is run the following command inside your project directory in the terminal:
+```
+npm start
+```
+* However, if you downloaded the project directory from third-party you need to run the following commands inside the project directory in the terminal:
+```
+npm install
+npm start
+```
+
 ## Introduction to JSX and Babel
 * First thing we have to keep in mind is that React.js works by creating and connecting components in a tree structure (as we did in Flutter).
 * Each component usually has 3 files associated to it: a HTML file (which defines its structure), a CSS file (which defines its style) and a JS file (which defines its funcionality).
