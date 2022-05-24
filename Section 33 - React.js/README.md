@@ -323,3 +323,19 @@ function double(number){
 
 const newNumbers = numbers.map(double); // [2,4,6,8,10];
 ```
+#### Filter
+* __As the name suggests. This method filters some elements from the given array. It receives a function that returns true or false as its only parameter and only keep inside the array the elements that return true.__
+* __This method also returns a new array.__
+```javascript
+const numbers = [1,2,3,4,5];
+
+function isEven(number){
+ if(number % 2 === 0){
+  return true;
+ }else{
+  return false;
+ }
+}
+
+const evenNumbers = numbers.filter(isEven); // [2,4];
+```
