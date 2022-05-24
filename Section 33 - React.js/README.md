@@ -307,4 +307,4 @@ function App() {
 
 export default App;
 ```
-* __IMPORTANT: When dealing with repeated components, the component blueprint must have a field called "key". The value of this field for repeated components must be unique for each component. The "key" field can have a value of type int or type string.__
+* __IMPORTANT: When dealing with repeated components, the component blueprint must have a field called "key". The value of this field for repeated components must be unique for each component. The "key" field can have a value of type int or type string. This is a property that is not supposed to be used by us, developers. It only serves to be purpose of being used to make repeated React components unique.__
