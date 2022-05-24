@@ -271,3 +271,7 @@ ReactDOM.render(
  document.getElementById("root")
 );
 ```
+
+## React DevTools
+* This is a very useful extension that can be installed inside Chrome or Firefox that allows us to view the ReactDOM. It's very similar to the normal DOM.
+* It allows us to view the structure of our app and also the data that is stored inside every component inside it.
