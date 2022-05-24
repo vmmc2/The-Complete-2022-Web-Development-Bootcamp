@@ -275,3 +275,36 @@ ReactDOM.render(
 ## React DevTools
 * This is a very useful extension that can be installed inside Chrome or Firefox that allows us to view the ReactDOM. It's very similar to the normal DOM.
 * It allows us to view the structure of our app and also the data that is stored inside every component inside it.
+
+## Mapping Data to Components
+* In order to render several components of the same type, we need to use some strategy.
+* In these scenarios we can use a ```for loop``` or the ```map``` method. It's recommended to use the ```map``` method since it's considered more legible.
+* __But how the ```map``` method works? It works by being applied to an array/list as one of its inputs. Its only input is a function that is going to be applied to every element that is inside the array/list.__
+* The code snippet below will make things more clear:
+```javascript
+import React from "react";
+import Card from "./Card";
+import contacts from "../contacts";
+
+function createCard(contact){
+  return (
+  <Card
+    name={contact.name}
+    img={contact.imgURL}
+    tel={contact.phone}
+    email={contact.email}
+  />);
+}
+
+function App() {
+  return (
+    <div>
+      <h1 className="heading">My Contacts</h1>
+      {contacts.map(createCard)}
+    </div>
+  );
+}
+
+export default App;
+```
+* __IMPORTANT: When dealing with repeated components, the component blueprint must have a field called "key". The value of this field for repeated components must be unique for each component. The "key" field can have a value of type int or type string.__
