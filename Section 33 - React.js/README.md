@@ -388,3 +388,6 @@ const foundIndex = numbers.findIndex(function(number){
 
 // foundIndex = 2;
 ```
+
+## React Hooks
+* __This is a React concept that is used to make our apps more interactive and dynamic. Its core idea consists of "hooking" the state of a component in order to change its appearance inside the application.__
