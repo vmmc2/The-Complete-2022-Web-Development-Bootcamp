@@ -391,3 +391,34 @@ const foundIndex = numbers.findIndex(function(number){
 
 ## React Hooks
 * __This is a React concept that is used to make our apps more interactive and dynamic. Its core idea consists of "hooking" the state of a component in order to change its appearance inside the application.__
+* __Important: Remember that button elements of HTML have an attribute called ```on-click``` which receives a function that will be called/trigged when the said button is pressed. It's also worth mentioning that when we are working with React the said attribute must be written as ```onClick```.__
+* The most common and used example of React Hooks is the __useState__ hook. This hook can only be used inside __Functional Components (That is, components that are actually JS functions).__
+* The code snippet bellow will show the basic principle of this type of React Hooks.
+```javascript
+import React from "react";
+
+function App(){
+  const [count, setCount] = React.useState(0);
+  //The React.useState(initialState) method returns an array of 2 elements:
+  //1) The first element holds the value of the initial state.
+  //2) The second element is a function that updates the state.
+
+  function increase(){
+    setCount(count + 1);
+  }
+
+  function decrease(){
+    setCount(count - 1);
+  }
+
+  return (
+    <div className="container">
+      <h1> {count} </h1>
+      <button onClick={decrease}> - </button>
+      <button onClick={increase}> + </button>
+    </div>
+  );
+}
+
+export default App;
+```
