@@ -506,3 +506,9 @@ function App() {
 
 export default App;
 ```
+
+## React Forms
+* In this section, we are going to learn how to extract info from a form using React.
+* Also, we are going to learn how to change the state of our appplication based on the information present inside a form.
+* __The first thing that we must know is that the HTML ```<input></input>``` element is used to create a form. This element has an attribute called ```onChange``` which can call a function every time the user changes the content of the said ```<input></input>``` element.
+* __The called method will receive a single parameter (which is usually called ```event```) that has important info about the ```<input></input>``` element such as: the content of the element, its placeholder, its title and many other info that can be found by consulting the documentation related to the ```onChange``` attribute.__
