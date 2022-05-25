@@ -422,3 +422,51 @@ function App(){
 
 export default App;
 ```
+* The code snippet below shows a simple application which tells the user the current time when he/she presses the "Get Time" button:
+```javascript
+import React from "react";
+
+function App() {
+  let currentTime = new Date().toLocaleTimeString();
+  const [initialTime, setTime] = React.useState(currentTime);
+
+  function getCurrentTime() {
+    const newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
+  }
+
+  return (
+    <div className="container">
+      <h1> {initialTime} </h1>
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
+* The code snippet below shows a simple application which tells the user the current time in a synchronous way:
+```javascript
+import React from "react";
+
+function App() {
+  let currentTime = new Date().toLocaleTimeString();
+  const [initialTime, setTime] = React.useState(currentTime);
+
+  setInterval(getCurrentTime, 1000);
+
+  function getCurrentTime() {
+    const newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
+  }
+
+  return (
+    <div className="container">
+      <h1> {initialTime} </h1>
+      <button onClick={getCurrentTime}>Get Time</button>
+    </div>
+  );
+}
+
+export default App;
+```
