@@ -470,3 +470,39 @@ function App() {
 
 export default App;
 ```
+
+## Event Handling in React
+* When working with React, we can handle more events than just a click on a button.
+* __I highly recommend that you take a look at the article "HTML events" present inside the w3schools website to take a look at the other events that we can handle using React.__
+* The code snippet below shows how to change the color of a button component when the mouse is put on it:
+```javascript
+import React from "react";
+
+function App() {
+  const [initialMouse, setMouse] = React.useState(false);
+
+  function mouseOver() {
+    setMouse(true);
+  }
+
+  function mouseOut() {
+    setMouse(false);
+  }
+
+  return (
+    <div className="container">
+      <h1>Hello</h1>
+      <input type="text" placeholder="What's your name?" />
+      <button
+        style={{ backgroundColor: initialMouse ? "black" : "white" }}
+        onMouseOver={mouseOver}
+        onMouseOut={mouseOut}
+      >
+        Submit
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
