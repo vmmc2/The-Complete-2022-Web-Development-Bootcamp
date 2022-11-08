@@ -64,3 +64,7 @@ app.get("/", function(req, res){
   * ```let``` -> Local
   * ```const``` -> Local
 * __Good Practice: AVOID USING ```var```. USE ```let```.__
+
+
+### href and GET request
+* __Clicking on a specific HTML element that has a ```href``` attribute that links to another page has the same of effect of executing a GET request to the said page.__
